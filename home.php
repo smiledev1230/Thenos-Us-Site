@@ -450,12 +450,10 @@ Model #: <strong>PB1-W-COM</strong><P style="font-size:12px">FOR COMMERCIAL</P><
                         
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
                                 <img src="images/PlayBox-Models-PB1-C.png" />
-                                <h4>Thenos Wall PlayBox PRO<br>Model: PB1-W-PRO</h4>
+                                <h4>Thenos PlayBox<sup>&trade;</sup> for Ceiling<br>
+Model #: <strong>PB1-C</strong><P style="font-size:12px">RESIDENTIAL & COMMERCIAL</P></h4>
 
-                                <p>Designed for professional 
-installations. Allows for a 
-clean, cable-free look 
-within the home.</p>
+                                <p>In-Ceiling System for Sonos Play:1</p>
 
                             </div>
                         	<div class="text-center ">
