@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <title>thenos makers of the PlayBox&trade;</title>
+        
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:500,400,300" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="css/normalize.css">
+<!--        <link rel="stylesheet" href="css/plugins.css" />-->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/nivo-lightbox.css">
+        <link rel="stylesheet" href="css/themes/default/default.css">
+         <link rel="stylesheet" href="css/jquery.countdown.css">
+
+        <!--if active wow.js. active animate.css-->
+        <link rel="stylesheet" href="css/animate.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Color CSS -->
+        <link rel="stylesheet" href="css/colors/blue.css">
+
+        <!-- DARK CSS-->
+        <!--        <link rel="stylesheet" href="css/dark.css">-->
+
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="#main-navbar">
+    
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="loader" style="display: none;">
+            <div class="loaded" style="display: none;">&nbsp;</div>
+        </div>
+
+
+        <div id="page" class="page">
+
+
+
+            
+            <!-- MENU Section-->
+            
+            <header>
+                <nav class="navbar fixed-nav navbar-default  navbar-fixed-top" id="main-navbar" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <a href="index.html" class="navbar-brand top-logo"><img src="images/logo.png" alt="logo"></a>
+                        </div>  <!--end navbar-header -->
+
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+
+                            <ul class="nav navbar-nav navbar-right">
+                                   <li><a href="#home">home</a></li>
+                                <li><a href="#features">what's PlayBox&trade;</a></li>
+                                <li><a href="#describe"></a></li>
+                                <li><a href="#screenshot">videos</a></li>
+                                <li><a href="#service">dealers &amp; distributors</a></li>
+                                <li><a href="#team">about thenos</a></li>
+                                <li><a href="contact us.html">contact</a></li>
+                                <li><a href="#" class="btn btn-sm btn-primary"><i class="fa fa-check-square-o"></i> pre-order</a></li>
+                            </ul>
+                        </div>  <!--end collapse -->
+                    </div>  <!--end container -->
+                </nav>
+            </header><!--/-->
+
+            
+            <!-- MENU Section-->
+            
+            <header>
+                <nav class="navbar fixed-nav navbar-default  navbar-fixed-top" id="main-navbar" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <a href="index.html" class="navbar-brand top-logo"><img src="images/logo.png"></a>
+                        </div>  <!--end navbar-header -->
+
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+
+                            <ul class="nav navbar-nav navbar-right">
+                                   <li><a href="#home">home</a></li>
+                                <li><a href="#features">what's PlayBox&trade;?</a></li>
+                                <li><a href="#screenshot">videos</a></li>
+                                <li><a href="dealer.html">dealers &amp; distributors</a></li>
+                                <li><a href="#team">about thenos<br></a></li>
+                                <li><a href="contact us.html">contact</a></li>
+                                <li class="preorder"><a href="/index.php" id="new-btn" class="btn btn-sm btn-primary">pre-order</a></li>
+                            </ul>
+                        </div>  <!--end collapse -->
+                    </div>  <!--end container -->
+                </nav>
+            </header><!--/-->
+            
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script>
+var bgImageArray = ["lonely.jpg", "uluwatu.jpg", "carezza-lake.jpg", "batu-bolong-temple.jpg"],
+base = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/full-",
+secs = 4;
+bgImageArray.forEach(function(img){
+    new Image().src = base + img; 
+    // caches images, avoiding white flash between background replacements
+});
+
+function backgroundSequence() {
+	window.clearTimeout();
+	var k = 0;
+	for (i = 0; i < bgImageArray.length; i++) {
+		setTimeout(function(){ 
+			document.getElementById("home").style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
+			document.getElementById("home").style.backgroundSize ="cover";
+		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
+		}, (secs * 1000) * i)	
+	}
+}
+backgroundSequence();
+</script>
+            <section id="home" class="home" >
+            
+		              <div class="surface-wrap"><!-- <div id="surface"></div>--></div>
+                <div class="canvas-wrap"><!--<canvas id="canvas"></canvas>--></div>
+                <div class="overlay">
+
+                    <div class="container slider-container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="home-intro-half st-2nd-half">
+                                    <!--Header text -->
+                                    <h1><strong>meet the PlayBox&trade; by thenos :)</strong><br>
+invented by installers
+<br></h1>
+                                    <h3><strong>the original and only wall-box for the Sonos&reg; Play:1</strong> 
+take your Play:1 from tabletop to in-wall and 
+get rid of unsightly cords...</h3>
+
+                                    <!--DOWNLOAD BUTTON -->
+                                    <div class="download-button">
+                                        <a href="#" class="btn btn-default download-btn">features</a>
+                                        <a href="#" class="btn btn-default download-btn">pre-order</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="home-intro-2nd-half st-half">
+                                    <img src="images/home-half.png" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+ 
+
+
+      
+        </section><!--end-->
+        
+
+
+            <!-- Feature Section-->
+
+
+
+            <section id="features" class="sections">
+                <div class="container">
+                    <div class="row">
+                        
+                          <!--  Heading-->
+                        <div class="heading wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                            <div class="title text-center"><h1>PlayBox&trade; overview</h1></div>
+                            <div class="subtitle text-center "><h5>the PlayBox&trade; by thenos - wall-box for the Sonos&reg; Play:1</h5></div>
+                            <div class="separator text-center"></div>
+                        </div>
+                        <div class="featuers-lists">
+                            <!-- FEATURES LEFT -->
+                            <div class="col-sm-4">
+                                <ul class="features-list text-right wow fadeInLeft " data-wow-duration="1s" style="visibility: visible; -webkit-animation: fadeInLeft 1s;">
+                                    <li class="features-list-item">
+                                        <h4>invented by installers</h4>
+                                        <p>created by installers, every aspect of the PlayBox&trade; was designed 
+
+with custom installation in mind
+</p>
+                                    </li>
+                                    <li class="features-list-item">
+                                        <h4>showcase it, don't cover it</h4>
+                                        <p>taking inspiration from a diamond in a 
+jewelry box the PlayBox&trade; is designed to 
+
+neatly nest and showcase the Sonos&reg; Play:1</p>
+                                    </li>
+                                    <li class="features-list-item">
+                                        <h4>color options</h4>
+                                        <p>available in two colors: artic white or stealth black to match the Play:1</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- PHONE IMAGE -->
+                            <div class="col-sm-4 text-center">
+                                <div class="features-img wow bounceIn  " data-wow-offset="120" data-wow-duration="1.5s" style="visibility: visible;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;">
+                                    <img src="images/uploads/PlayBox High Res EM Version3B smaller.png" alt="App Feature Image" style="border-radius: 0px; border: 1px none rgb(86, 86, 86);">
+                                </div>
+                            </div>
+
+                            <!-- FEATURES RIGHT -->
+                            <div class="col-sm-4">
+                                <ul class="features-list wow fadeInRight " data-wow-duration="1s" style="visibility: visible; -webkit-animation: fadeInRight 1s;">
+                                    <li class="features-list-item">
+                                        <h4>customize away</h4>
+                                        <p></p><div>
+	the faceplate to the PlayBox&trade; is easily 
+	custom painted or even vinyl wrapped 
+	to allow for a designer touch<br>
+</div><p></p>
+                                    </li>
+                                    <li class="features-list-item">
+                                        <h4>power options</h4>
+                                        <p>an integrated recessed outlet is designed into the PlayBox&trade; and provides hidden power for the Play:1, a power relocation kit is also available<br></p>
+                                    </li>
+                                    <li class="features-list-item">
+                                        <h4><span style="color:#4C9EDA">NEW!</span> hide those cords</h4>
+                                        <p>a smart cable management system takes the standard Play:1 cable and  neatly conceals it away while still meeting code requirements</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section><!--end-->
+
+
+            <!-- DOWNLOAD Section-->
+            <section id="download" class="download-bg-img">
+                <div class="overlay-img">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="download-full-width white-text">
+
+                                    <!--  Heading-->
+                                    <div class="heading wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                                        <div class="title text-center"><h1>yep, it's invented by installers</h1></div>
+                                        <div class="subtitle text-center "><h5>the PlayBox&trade; was born of expertise from both product design and the custom installation field</h5></div>
+                                        <div class="separator-min-height text-center"></div>
+                                    </div>
+                                    <div class="col-sm-8 col-sm-offset-2 wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                                        
+                                        <p></p>
+                                        <div class="download-button only-button wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                                            <a href="#" class="btn btn-default download-btn">pre-order</a>
+                                            <a href="#faq" class="btn btn-default download-btn">FAQs</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!-- end col -->
+                        </div>
+                    </div>
+                </div>
+            </section><!--end-->
+
+
+            <!-- Describe Section-->
+            <section id="describe" class="sections describe">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <!--  Heading-->
+                            <div class="heading black-text wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                                <div class="title-half"><h1>what is a PlayBox&trade;?</h1></div>
+                                <div class="subtitle-half"><h5>it’s like having your cake while eating more delicious cake</h5></div>
+                                <div class="separator-left"></div>
+                            </div>
+
+
+                            <div class="describe-details wow fadeInLeft " data-wow-offset="10" data-wow-duration="1.5s">
+                                <p>
+                                    
+It’s a common situation: that sleek, rich sounding Sonos&reg; Play:1 just has no good place to comfortably sit. You can place it on a table, credenza, or randomly on a counter but it gets knocked around, it’s accidentally unplugged… and that cord!
+ <br>
+<br>
+
+Enter the PlayBox&trade; by thenos. It’s the bridge between high-fidelity, wireless audio and sharp style. The PlayBox&trade; is in-wall enclosure specifically designed for your Sonos&reg; Play:1. The PlayBox&trade; preserves that warm, full textured sound that the Play:1 has become known for while allowing for a custom “architectural” look. Use the PlayBox&trade; in any kitchen, living room, media/theater room, your bedroom, bathroom (you get the idea).
+                                </p>
+                            </div>
+                        </div><!--end half-->
+
+                        <div class="col-md-6 wow fadeInRight " data-wow-offset="10" data-wow-duration="1.5s">
+                            <div class="text-center describe-images">
+                                <img src="images/uploads/PlayBox High Res EM Version3B smaller.png" class="text-center" alt="" style="border-radius: 0px; border: 1px none rgb(86, 86, 86);">
+                            </div><!--end images-->
+                        </div><!--end half-->
+
+
+                    </div><!--end row-->
+                </div><!--end container-->
+            </section><!--end section--><!--end-->
+
+
+            <!-- Describe Section-->
+            <section id="describe" class="sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-push-6">
+
+
+                            <!--  Heading-->
+                            <div class="heading black-text wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                                <div class="title-half"><h1> 
+all good things come in pairs  
+</h1></div>
+                                <div class="subtitle-half"><h5>audiophile sound + aesthetically pleasing = sweet pair
+</h5></div>
+                                <div class="separator-left"></div>
+                            </div>
+
+
+                            <div class="describe-details wow fadeInRight " data-wow-offset="10" data-wow-duration="1.5s">
+                                <p>Sometimes package design can be as beautiful as the product itself; think a vintage Cabernet inside its original wooden crate. A Swiss watch resting in a custom case. A shiny pearl inside an oyster.
+ <br>
+<br>
+
+So why just get one? Just as you can use the Play:1’s as a stereo pair or as the rear channels in a surround sound system you can pair your PlayBox&trade;es. The PlayBox&trade; is available singular and in pairs. Mount the PlayBox&trade; at ear level for an immersive movie-theater like experience as part for the Sonos&reg; surround sound system or up higher for full-bodied whole home audio, like there has never been before, or even in a dual stereo configuration (four units) within one room for those who crave a concert-like experience.
+ 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-pull-6">
+                            <div class="text-center describe-images wow fadeInLeft " data-wow-offset="10" data-wow-duration="1.5s">
+                                <img src="images/apps.png" class="text-center" alt="">
+                            </div><!--end images-->
+                        </div>
+                    </div><!--end row-->
+                </div><!--end container-->
+            </section><!--end section--><!--end-->
+
+
+            <!-- Describe Section-->
+            <section id="describe" class="sections describe">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <!--  Heading-->
+                            <div class="heading black-text wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                                <div class="title-half"><h1>
+invented by installers</h1></div>
+                                <div class="subtitle-half"><h5>but with everyone in mind</h5></div>
+                                <div class="separator-left"></div>
+                            </div>
+
+
+                            <div class="describe-details wow fadeInLeft " data-wow-offset="10" data-wow-duration="1.5s">
+                                <p>
+                                    The PlayBox&trade; was designed by installers, we took into account all the knowledge gained from installing speaker systems within thousands of homes and businesses and created the PlayBox&trade;.<br>
+<br>
+
+ 
+With multiple versions available for residential and commercial it’s easier than ever to integrate your Sonos&reg;-based theater or distributed audio for your home or business without a limitation on imagination.
+<br>
+<br>
+ 
+Showcase your speakers anywhere in your location and control each with the Sonos&reg; app on any of your devices. Your wireless, amplifier-free soundstage is now here...
+                                </p>
+                            </div>
+                        </div><!--end half-->
+
+                        <div class="col-md-6 wow fadeInRight " data-wow-offset="10" data-wow-duration="1.5s">
+                            <div class="text-center describe-images">
+                                <img src="images/apps.png" class="text-center" alt="">
+                            </div><!--end images-->
+                        </div><!--end half-->
+
+
+                    </div><!--end row-->
+                </div><!--end container-->
+            </section><!--end section--><!--/-->
+
+
+            <!-- testimonial Section-->
+            <section class="testimonial">
+                <div class="overlay-img">
+                    <div class="container">
+                        <div class="row">
+                            
+                            
+                            
+                            <div class="testimonials">
+                                <div class="testimonial-item">
+                                    <!--<div class="testimonial-thumb img-circle">
+                                        <img class="img-circle" src="images/testimonial/1.jpg" alt="">
+                                    </div>!-->
+                                    <div class="testimonial-msg"><i class="fa fa-quote-left"></i>
+                                        compelling landing pages and the straight forward analytics helped us determine which page was most successful. wow is a key tool for our business.The easy to use interface made it simple for us to Build several compelling landing pages and the straight forward analytics helped us determine which page was most successful. wow is a key tool for our business.
+                                        <i class="fa fa-quote-right pull-right"></i>
+                                    </div>
+
+                                    <!--  INFORMATION -->
+                                    <div class="testimonial-name">John Doe</div>
+                                    <div class="testimonial-info">CEO, Envato Pty Ltd.</div>
+                                </div>
+                                <div class="testimonial-item">
+                                   <!-- <div class="testimonial-thumb img-circle">
+                                        <img class="img-circle" src="images/testimonial/1.jpg" alt="">
+                                    </div>!-->
+                                    <div class="testimonial-msg"><i class="fa fa-quote-left"></i>
+                                        compelling landing pages and the straight forward analytics helped us determine which page was most successful. wow is a key tool for our business.The easy to use interface made it simple for us to Build several compelling landing pages and the straight forward analytics helped us determine which page was most successful. wow is a key tool for our business.
+                                        <i class="fa fa-quote-right pull-right"></i>
+                                    </div>
+
+                                    <!--  INFORMATION -->
+                                    <div class="testimonial-name">John Doe</div>
+                                    <div class="testimonial-info">CEO, Envato Pty Ltd.</div>
+                                </div>
+                                <div class="testimonial-item">
+                                    <!--<div class="testimonial-thumb img-circle">
+                                        <img class="img-circle" src="images/testimonial/1.jpg" alt="">
+                                    </div>!-->
+                                    <div class="testimonial-msg"><i class="fa fa-quote-left"></i>
+                                        several compelling landing pages and the straight forward analytics helped us determine which page was most successful. wow is a key tool for our business.The easy to use interface made it simple for us to Build several compelling landing pages and the straight forward analytics helped us determine which page was most successful. wow is a key tool for our business.
+                                        <i class="fa fa-quote-right pull-right"></i>
+                                    </div>
+
+                                    <!--  INFORMATION -->
+                                    <div class="testimonial-name">John Doe</div>
+                                    <div class="testimonial-info">CEO, Envato Pty Ltd.</div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- testimonial Section End--><!--/-->
+
+            
+            <!-- Service Section-->
+            <section id="service" class="sections colorsbg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="service text-center  wow fadeInLeft " data-wow-offset="120" data-wow-duration="1.5s">
+                                <span><i class="fa fa-css3"></i></span>
+                                <h4>PlayBox&trade; PRO: PB1-PRO</h4>
+                                <p>designed for direct wiring<br>
+
+utilizing the nearest<br>
+
+residential electrical source<br>
+
+                                        <a href="#" class="btn btn-default download-btn">details</a>
+</p>
+                            </div>
+                        </div><!--end 4 col-->
+
+                        <div class="col-sm-4">
+
+                            <div class="service text-center  wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                                <span><i class="fa fa-html5"></i></span>
+                                <h4>PlayBox&trade; EZ: PB1-EZ</h4>
+                                <p>same as PRO model but includes a power<br>
+
+relocation kit, safely and easily wire your
+<br>
+PlayBox&trade; using a nearby existing electrical outlet<br>
+
+                                        <a href="#" class="btn btn-default download-btn">details</a></p>
+                            </div>
+                        </div><!--end 4 col-->
+
+                        <div class="col-sm-4">
+                            <div class="service text-center  wow fadeInRight " data-wow-offset="120" data-wow-duration="1.5s">
+                                <span></span>
+                                <h4>PlayBox&trade; BIZ: commercial</h4>
+                                <p>the PlayBox&trade; that is designed for<br>
+
+the commercial environment:
+<br>
+restaurant/bar, retail, office, you decide...
+
+                                        <a href="contact us.html" class="btn btn-default download-btn">i'm interested </a></p>
+                            </div>
+                        </div><!--end 4 col-->
+                    </div><!--end row-->
+                </div>
+            </section><!--end-->
+
+
+            <!-- FAQ Section-->
+            <section id="faq" class="sections" >
+                <div class="container" style="margin-top:20px">
+                    <div class="row">
+
+                        <!--  Heading-->
+                        <div class="heading wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                            <div class="title text-center"><h1>FAQ's</h1></div>
+                            <div class="separator text-center"></div>
+                        </div>
+                        <div class="faqs">
+
+                            <div class="col-md-6">
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq1">what is PlayBox&trade;?</a> 
+                                    <div id="faq1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                        The PlayBox&trade; by thenos is an specially designed enclosure that allows you to take your Sonos&reg; Play:1 speaker and recess it in the wall.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq2">what is Sonos&reg;?</a>
+                                    <div id="faq2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Sonos&reg; is the smart speaker system that delivers all the music on earth, in every room, with pure, immersive sound. Sonos&reg; unites your digital music collection and services in one simple app that you control from any smart device.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq3">
+what is a Play:1?
+</a>
+                                    <div id="faq3" class="panel-collapse collapse">
+                                        <div class="panel-body">The Play:1 is a compact tabletop wireless smart speaker by Sonos&reg;. The Play:1 can be sued singular or as a stereo pair. The Play:1 is the most widely sold of the Play series of speakers by Sonos&reg;. The Play: 1 has achieved a cult like following for its super rich, full-bodied sound that’s crystal clear at any volume. 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq9">is the PlayBox&trade; suitable for residential and commercial installs?</a>
+                                    <div id="faq9" class="panel-collapse collapse">
+                                        <div class="panel-body">Currently the residential version(s) of the PlayBox&trade; are the first to be available. We do plan on rolling out the commercial version of the PlayBox&trade; for Restaurant/Bar, Retail, Office/Corporate, etc. soon.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq6">do you make something to cover the speaker? </a>
+                                    <div id="faq6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                           No. And the reason is simple: we don’t want to hide the Play:1, quite the opposite actually… Sonos&reg; users are proud of their choice to become apart of the Sonos&reg; community and the idea behind the PlayBox&trade; design was to showcase the speaker and “cradle it like a diamond in a jewelry box”.
+                                        </div>
+                                    </div>
+                                </div>
+                           	</div>
+                            <div class="col-md-6">
+                            
+                              
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq4">who is thenos?</a> 
+                                    <div id="faq4" class="panel-collapse collapse">
+                                        <div class="panel-body">thenos, LLC is an American company based in Dallas, Texas and is the designer and maker of the PlayBox&trade;. The company was founded by installers with the mission of creating the most unique products in the audio/video market. Read More
+                                        </div>
+                                    </div>
+                                </div>  
+                                
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq5">does thenos make other products?</a>
+                                    <div id="faq5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                           Currently the PlayBox&trade; for the Sonos&reg; Play:1 is the debut product from thenos. However other products are already in the design stages. Stay Tuned
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq7">why not just use in-ceiling/wall speakers instead of the PlayBox&trade;?</a>
+                                    <div id="faq7" class="panel-collapse collapse">
+                                        <div class="panel-body">The PlayBox&trade; does not aim to replace the market for architectural speakers; “we simply sought to provide a solution where there was none”. For those who already own or insist on a Sonos&reg; Play:1 but yet could do without messy cords and/or need back valuable counter space, or simply have none to spare, are a perfect fit for the PlayBox&trade;.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq8">what colors/finishes are available?</a>
+                                    <div id="faq8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                           Currently the PlayBox&trade; is available in two colors: Artic White and Stealth Black. The faceplate can be painted and or wrapped to make it blend or even stand out among its surroundings!
+                                        </div>
+                                    </div>
+                                </div>	
+                                <div class="panel">
+                                    <a class="panel-heading collapsed" data-toggle="collapse" href="#faq10">do I need a license to install the PlayBox&trade;? </a>
+                                    <div id="faq10" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                           Home Owners:<br>
+
+You may install the PlayBox&trade; in your own home: The PlayBox&trade; features an integrated power supply that requires a high-voltage connection - just like a standard home electrical socket. So the same state/city codes apply just as if you were installing your own ceiling fan or wall socket. Check with your city for local codes and guidelines.
+<br>
+<br>
+<small><strong>
+*If you do not feel comfortable or do not posses the electrical knowledge/skill DO NOT ATTEMPT SELF INSTALLATION, consult an electrician or professional installer.</strong>
+</small><br>
+<br>
+Professional Installers:
+<br>
+thenos offers a wire directly unit, the PlayBox&trade; PRO, for wiring into the nearest electrical junction. We also a offer the PlayBox&trade; EZ which features a power relocation kit, the PlayBox&trade; EZ ships with a male power inlet which allow those without electrical licensing to safely install a PlayBox&trade; and then plug it into a nearby 110v outlet.
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><div class="padding-twenty"></div><!--/-->
+
+
+            <!-- Screenshot Section-->
+
+            <section id="screenshot" class="sections">
+                <div class="container">
+                    <div class="row">
+
+                        <!--  Heading-->
+                        <div class="heading wow fadeIn " data-wow-offset="120" data-wow-duration="1.5s">
+                            <div class="title text-center"><h1>videos</h1></div>
+                            <div class="subtitle text-center "></div>
+                            <div class="separator text-center"></div>
+                        </div>
+
+
+                        <!-- screenshot images-->
+                        <div class="screenshots wow fadeInUp " data-wow-offset="120" data-wow-duration="1.5s">
+                            <div class="screenshot-list">
+                                <a href="images/screenshots/1.png" data-lightbox-gallery="screenshots">
+                                    <img src="images/screenshots/1.png" alt="Mobile App Screenshot">
+                                </a>
+                            </div>
+                            <div class="screenshot-list">
+                                <a href="images/screenshots/2.png" data-lightbox-gallery="screenshots">
+                                    <img src="images/screenshots/2.png" alt="Mobile App Screenshot">
+                                </a>
+                            </div>
+                            <div class="screenshot-list">
+                                <a href="images/screenshots/3.png" data-lightbox-gallery="screenshots">
+                                    <img src="images/screenshots/3.png" alt="Mobile App Screenshot">
+                                </a>
+                            </div>
+                            <div class="screenshot-list">
+                                <a href="images/screenshots/4.png" data-lightbox-gallery="screenshots">
+                                    <img src="images/screenshots/4.png" alt="Mobile App Screenshot">
+                                </a>
+                            </div>
+                            <div class="screenshot-list">
+                                <a href="images/screenshots/2.png" data-lightbox-gallery="screenshots">
+                                    <img src="images/screenshots/2.png" alt="Mobile App Screenshot">
+                                </a>
+                            </div>
+                            <div class="screenshot-list">
+                                <a href="images/screenshots/3.png" data-lightbox-gallery="screenshots">
+                                    <img src="images/screenshots/3.png" alt="Mobile App Screenshot">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section><!--/-->
+
+
+            <!-- subscription Section-->
+            <section id="subscription" class="sections">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="describe-videos">
+                            <div class="col-md-6">
+
+                                <!-- Team Heading-->
+                                <div class="heading black-text wow fadeIn  animated animated animated animated animated" data-wow-offset="120" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s;">
+                                    <div class="title-half"><h1>early adopters rejoice; pre-order</h1></div>
+                                    <div class="subtitle-half"><h5>be among the first to receive the one-of-a-kind PlayBox&trade;</h5></div>
+                                    <div class="separator-left"></div>
+                                </div>
+
+                                <p>
+                               
+
+
+
+                               The PRO & EZ versions of the PlayBox&trade; are designated for 
+wide release by end of 1st the QTR. Order your PlayBox&trade; 
+by thenos today for only $129:<br><br>
+
+<a href="#" class="btn btn-lg btn-primary"><i class="fa fa-check-square-o"></i> pre-order</a></p>
+                            </div>
+                        </div> <!--end half-->
+
+
+                        <div class="col-md-6 subscribe-img">
+
+                            <div class="subscribe-form3">
+                                <h2 class="text-center white-text">stay informed:</h2>
+                                <p class="white-text">get updates related to thenos and the PlayBox&trade;</p>
+                                <form id="mailchimp" class="subscribe_form subscribe_form3" role="form" novalidate>
+                                    <h6 class="subscription-success"></h6>
+                                    <h6 class="subscription-error"></h6>
+                                    <div class="input-group">
+                                        <input class="form-control" type="email" name="EMAIL" id="subscribe_email" placeholder="Enter your email">
+                                        <div class="input-group-btn">
+                                            <button class="btn" type="submit" id="subscribe_submit"><i class="fa fa-envelope"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div><!--end half-->
+                    </div>
+                </div>
+
+            </section><!--call to action-->
+            <section class="call-to-action call-to-action2">
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <div class="col-sm-12">
+                                <h1 class="white-text text-center">go ahead, bug us, we dont mind:</h1>
+                            </div>
+                            <div class="col-sm-12">
+                                <a href="contact us.html"><button class="btn btn-primary btn-lg  text-center" type="submit">contact us</button></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section><!--/-->
+
+
+            <!-- FOOTER Section-->
+
+            <footer id="footer" class="footer-3">
+                <div class="container">
+                    <div class="row v-center">
+                        <div class="col-sm-2">
+                           <strong>thenos</strong> <br>
+<small>makers of the PlayBox&trade;</small></div>
+                       
+                        <div class="col-sm-7">
+                            <div class="additional-links text-center  editContent"><p>thenos and PlayBox&trade; are registered trademarks of thenos, LLC. <br>
+Sonos&reg; &amp; Play:1 are registered trademarks of Sonos&reg;, Inc.</p></div>
+                        </div>
+                        <div class="col-sm-3  ">
+                            <h6 class="editContent">Designed in Dallas, TX</h6>
+                            <div class="address editContent" style=""><p>
+	phone: 972.426.9200<br>
+	email: <a href="mailto:info@thenos.us" target="_blank">info@thenos.us</a>
+</p></div>
+                            <div class="social-btns">
+                                <a href="https://www.facebook.com/thenosPlayBox&trade;?_rdr=p" style="font-size:30px"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.youtube.com/channel/UC34NzXbvOsMO6cb89BTZZtw" style="font-size:30px"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer></div>
+
+
+
+        <!--        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>        <script src="js/plugins.js"></script>
+        <script src="js/jquery.mb.YTPlayer.min.js"></script>
+        <script src="js/jquery.parallax-1.1.3.js"></script>
+        <script src="js/jquery.localScroll.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.wow.min.js"></script>
+        <script src="js/nivo-lightbox.min.js"></script>
+        <script src="js/jquery-contact.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="js/jquery.easypiechart.min.js"></script>
+        <script type="text/javascript" src="js/twitterFetcher_min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script src="js/canvas/surface.js"></script>
+        <script src="js/canvas/surface1.js"></script>
+
+
+        <script src="js/canvas/canvas.js"></script>
+
+
+
+ 
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--        <script>
+                    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                    e.src='//www.google-analytics.com/analytics.js';
+                    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                    ga('create','UA-XXXXX-X');ga('send','pageview');
+                </script>-->
+    
+
+</body></html>
