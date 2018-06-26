@@ -1,0 +1,79 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/*  
+ * LAYOUT VARIABLES 
+ */
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/*inline-block
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+.pav-newsletter {
+  padding: 40px 0 20px;
+  color: #000;
+  background: url("../image/mail-bg.png") no-repeat transparent bottom right;
+}
+.pav-newsletter .box-left {
+  text-align: left;
+}
+.rtl .pav-newsletter .box-left {
+  text-align: right;
+}
+.pav-newsletter .valid {
+  position: absolute;
+  top: 100%;
+  z-index: 999;
+  width: 100%;
+}
+.pav-newsletter .content {
+  width: 100%;
+  text-align: center;
+}
+.pav-newsletter .content .wapper {
+  display: inline-block;
+  position: relative;
+}
+.pav-newsletter .content .wapper > div {
+  margin-right: 10px;
+}
+.rtl .pav-newsletter .content .wapper > div {
+  margin-left: 10px;
+  margin-right: inherit;
+}
+.pav-newsletter .description {
+  float: left;
+  margin-right: 25px;
+  line-height: 20px;
+}
+.rtl .pav-newsletter .description {
+  float: right;
+}
+.rtl .pav-newsletter .description {
+  margin-left: 25px;
+  margin-right: inherit;
+}
+.pav-newsletter .title {
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.pav-newsletter .input-form input {
+  width: 420px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.pav-newsletter .btn-submit {
+  margin-top: 10px;
+}

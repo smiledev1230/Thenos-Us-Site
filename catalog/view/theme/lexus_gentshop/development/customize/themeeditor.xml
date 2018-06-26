@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<themeeditor>
+	<version value="1.4">
+	<ccc available="true" />
+	<guest_checkout available="true" />
+	<one_page_checkout available="true" />
+	<store_locator available="true" />
+	</version>
+	<author>themelexus</author>
+<name>Live Theme Editor</name>	
+<selectors>
+	<items>
+		<header>Body Content</header>
+		<match>body</match>		
+		<item>
+			<type>text</type>
+			<label>Background Color</label>
+			<selector>body</selector>
+			<attrs>background-color</attrs>
+		</item>
+		<item>
+		<type>image</type>
+			<label>Background Image</label>
+			<selector>body</selector>
+			<attrs>background-image</attrs>
+		</item> 		
+
+	 	<item>
+			<type>fontsize</type>
+			<label>Font-Size</label>
+			<selector>body,body #page</selector>
+			<attrs>font-size</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Text Color</label>
+			<selector>body, #powered .container, .footer-bottom .inner</selector>
+			<attrs>color</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Link Color</label>
+			<selector>body a,body #page a</selector>
+			<attrs>color</attrs>
+		</item> 
+	</items>
+ 
+	<items>
+		<header>TopBar</header>
+		<match>topbar</match>
+		<item>
+			<type>text</type>
+			<label>Background Color</label>
+			<selector>#topbar</selector>
+			<attrs>background-color</attrs>
+		</item> 
+	 	<item>
+			<type>text</type>
+			<label>Color Text</label>
+			<selector>#topbar, #topbar .btn-group .text-label, #cart h4</selector>
+			<attrs>color</attrs>
+		</item> 
+	 	<item>
+			<type>text</type>
+			<label>Color Link</label>
+			<selector>#topbar a,#topbar .btn.btn-theme-normal, #cart .heading a span</selector>
+			<attrs>color</attrs>
+		</item> 
+		<item>
+			<type>text</type>
+			<label>Icon Color</label>
+			<selector>#topbar .fa,#topbar .btn.btn-theme-normal .fa</selector>
+			<attrs>color</attrs>
+		</item>
+	</items>
+	
+	<items>
+		<header>Main Menu</header>
+		<match>pav-mainnav</match>	
+		<item>
+			<type>text</type>
+			<label>Background Color</label>
+			<selector>.main-menu,.main-menu.mainnav-v1, .main-menu.mainnav-v2, #pav-mainnav,#pav-mainnav .navbar-default</selector>
+			<attrs>background-color</attrs>
+		</item> 
+		<item>
+			<type>image</type>
+			<label>Background Image</label>
+			<selector>.main-menu, #pav-mainnav,#pav-mainnav .navbar-default</selector>
+			<attrs>background-image</attrs>
+		</item>
+	 	<item>
+			<type>text</type>
+			<label>Color Link</label>
+			<selector>.pav-megamenu .navbar-nav > li > a</selector>
+			<attrs>color</attrs>
+		</item>   
+		
+	</items>
+
+	<items>
+		<header>Footer top</header>
+		<match>footer-top</match>
+		<item>
+			<type>text</type>
+			<label>Background Color</label>
+			<selector>#pavo-footer-top, #pavo-footer-top .container</selector>
+			<attrs>background-color</attrs>
+		</item> 
+
+		<item>
+			<type>image</type>
+			<label>Background Image</label>
+			<selector>#pavo-footer-top, #pavo-footer-top, #pavo-footer-top .container</selector>
+			<attrs>background-image</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Text Color</label>
+			<selector>
+				.pav-newsletter		
+			</selector>
+			<attrs>color</attrs>
+		</item> 
+	</items>
+
+	<items>
+		<header>Footer Center</header>
+		<match>footer-center</match>
+		<item>
+			<type>text</type>
+			<label>Background Color</label>
+			<selector>#pavo-footer-center</selector>
+			<attrs>background-color</attrs>
+		</item> 
+
+		<item>
+			<type>image</type>
+			<label>Background Image</label>
+			<selector>#pavo-footer-center</selector>
+			<attrs>background-image</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Text Color</label>
+			<selector>
+				#pavo-footer-center, #pavo-footer-center .inner,#pavo-footer-center .box .box-heading,#pavo-footer-center .box.pavgooglemap .box-heading,#powered				
+			</selector>
+			<attrs>color</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Link Color</label>
+			<selector>#pavo-footer-center a</selector>
+			<attrs>color</attrs>
+		</item>
+	</items>
+
+	<items>
+		<header>Footer Bottom</header>
+		<match>footer-bottom</match>
+		<item>
+			<type>text</type>
+			<label>Background Color</label>
+			<selector>#pavo-footer-bottom</selector>
+			<attrs>background-color</attrs>
+		</item> 
+
+		<item>
+			<type>image</type>
+			<label>Background Image</label>
+			<selector>#pavo-footer-bottom</selector>
+			<attrs>background-image</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Text Color</label>
+			<selector>
+				#pavo-footer-bottom, #pavo-footer-bottom .inner,#pavo-footer-bottom .box .box-heading,.box-theme .box-heading			
+			</selector>
+			<attrs>color</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Link Color</label>
+			<selector>.footer-bottom .inner a</selector>
+			<attrs>color</attrs>
+		</item>
+	</items>
+
+</selectors>
+
+<elements>
+	<items>
+		<header>Products</header>
+		<match>product</match>
+
+		<item>
+			<type>text</type>
+			<label>Bg Sale</label>
+			<selector>
+				.product-label
+			</selector>
+			<attrs>background</attrs>
+		</item>
+		<item>
+			<type>text</type>
+			<label>Product Name</label>
+			<selector>.product-block .name a</selector>
+			<attrs>color</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Color Price</label>
+			<selector>.price</selector>
+			<attrs>color</attrs>
+		</item>  		
+
+
+		<item>
+			<type>text</type>
+			<label>Color Price New</label>
+			<selector>.price .price-new</selector>
+			<attrs>color</attrs>
+		</item>  		
+ 		<item>
+			<type>text</type>
+			<label>Color Price Old</label>
+			<selector>.price .price-old</selector>
+			<attrs>color</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Color Add To Cart</label>
+			<selector>
+				.btn.btn-shopping-cart
+			</selector>
+			<attrs>color</attrs>
+		</item>
+
+		<item>
+			<type>text</type>
+			<label>Button Cart Bg</label>
+			<selector>
+				.btn.btn-shopping-cart
+			</selector>
+			<attrs>background-color</attrs>
+		</item>  
+		
+	</items>
+
+</elements>
+</themeeditor>

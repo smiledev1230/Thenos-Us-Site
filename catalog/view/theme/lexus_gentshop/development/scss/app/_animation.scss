@@ -1,0 +1,189 @@
+#header-top{
+    .logo-store img{
+        max-width: 100%;
+        @include transition(all 0.35s);
+    }
+    .pav-megamenu .navbar-nav > li > a{
+        @include transition(all 0.35s);
+    }
+    .main-menu.mainnav-v2 .quick-action > div{
+        @include transition(all 0.35s);
+    }
+    &.hide-bar{
+        .logo-store{
+            img{
+               max-width: 45%;
+            }
+        }
+        .pav-megamenu .navbar-nav > li > a{
+            padding: 22px 0;
+        }
+        .main-menu.mainnav-v2 .quick-action > div{
+            padding-top: 0;
+        }
+    }
+    &.header-top-v4.hide-bar{
+        background: #212121!important;
+        padding-top: 0;
+        .logo-store{
+            img{
+               max-width: 45%;
+            }
+        }
+        .pav-megamenu .navbar-nav > li > a{
+            padding: 22px 0;
+        }
+        .main-menu.mainnav-v2 .quick-action > div{
+            padding: 11px 0;
+        }
+        .quick-action{
+          > div{
+            @include rtl-padding(15px,0,0,15px);
+            &.search-focus{
+                margin-top: 15px;
+                @include rtl-padding-right(17px);
+            }
+          }
+        }
+    }
+}
+
+.product-block {
+	.action {
+        @include opacity(0);
+        visibility: hidden;
+        @include transition (all 0.4s ease 0s);
+    }  
+    .bottom{
+        position: relative;
+        .wrap-hover{
+            height: 40px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            .cart{
+                @include opacity(0);
+                @include transition(all 0.35s);
+                position: absolute;
+                top: 0;
+                @include rtl-left(-110%);
+                width: 100%;
+                text-align: center;
+            }
+            .price{
+                @include transition(all 0.35s);
+                position: absolute;
+                top: 0;
+                @include rtl-left(0);
+                @include opacity(1);
+                width: 100%;
+            }
+        }
+    }
+    .swap.image{
+        .img{
+            position: relative;
+            @include translate( 0, 0 );
+            display: block;
+        }
+        .hover-image{
+            height: 100%;
+            @include rtl-left(0);
+            position: absolute;
+            top: 0;
+            @include translate( 100%, 0);
+            width: 100%;
+        } 
+        &:hover{
+            .hover-image{
+                @include translate( 0, 0 );
+            }
+            .img{
+                @include translate( -100%, 0 );
+            }
+        }
+    }
+    .image{
+        outline: 1px solid transparent;
+        outline-offset: 0;
+        @include transition(all 0.35s);
+    }
+    &:hover {
+        .price-quick{
+                @include opacity(1); 
+            }
+        .image{
+            outline-color: #C1C1C3;
+            outline-offset: -20px;
+            
+        }
+        .action {
+            @include opacity(1); 
+            visibility: visible;  
+        } 
+        .wrap-hover{
+            .price{
+                @include rtl-left(110%);
+                @include opacity(0);  
+            }
+            .cart{
+                @include rtl-left(0);   
+                @include opacity(1);          
+            }      
+        }
+    }
+	.image:hover {
+		.product-zoom, .pts-atchover{
+            @include opacity(1);
+            visibility: visible;            
+        }
+	}
+}
+
+.pavo-banners{
+    .img1{
+        .title{
+            @include transition(all 0.35s);
+            letter-spacing: 0px;
+        }
+        img{
+            @include transition(all 0.35s);
+            @include scale(1);
+        }
+        &:hover{
+            .title{
+                letter-spacing: 3px;
+            }
+            img{
+                @include scale(1.2);
+            }
+        }
+    }
+}
+.sidebar{
+    .product-block{
+        .img, .hover-image{
+            @include transition(none);
+        }
+        .rating, .product-rating, .norating{
+                display: none;
+            }
+        &:hover{
+            .rating, .product-rating, .norating{
+                display: none;
+            }
+            .price{
+                display: block;
+               @include rtl-left(0);
+            }
+            .hover-image{
+                display: none;
+            }
+            .img{
+                display: block;
+            }
+        }    
+    }
+}
+
+ 

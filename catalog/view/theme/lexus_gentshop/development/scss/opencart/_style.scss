@@ -1,0 +1,19 @@
+.box-center {
+	.pav-custom {
+		.box-heading {
+			font-size: 18px;
+		    font-weight: 700;
+		    text-align: center;
+		}
+	}
+}
+div.required .control-label:before {
+	content: '* ';
+	color: #F00;
+	font-weight: bold;
+}
+.contact-content {
+	.control-label {
+		@include rtl-text-align-left();
+	}
+}

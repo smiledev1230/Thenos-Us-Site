@@ -1,0 +1,56 @@
+
+@import "vars/bootstrap";
+@import "vars/opencart";
+
+
+@import "mixins/bootstrap";
+@import "mixins/app";
+
+ .pav-newsletter {
+ 	padding: 40px 0 20px;
+ 	color: #000;
+ 	background: url('#{$image-theme-path}mail-bg.png') no-repeat $nocolor bottom right;
+ 	.box-left {
+ 		@include rtl-text-align-left();
+ 	}
+ 	.valid{
+	 	position: absolute;
+	 	top: 100%;
+	 	z-index: 999;
+	 	width: 100%; 
+ 	}
+ 	.content{
+	 	width: 100%;
+	 	text-align: center;
+	 	.wapper{
+	 		display: inline-block;
+	 		position: relative;
+	 		> div{
+	 			@include rtl-margin-right(10px);
+	 		}
+	 	}
+ 	}
+ 	.description{
+ 		@include rtl-float-left(); 		 		
+ 		@include rtl-margin-right(25px);
+ 		line-height: 20px;
+ 	}
+ 	.title{
+ 		font-size: $font-size-base + 5;
+ 		font-weight: 100;
+ 		text-transform: uppercase;
+ 	}
+ 	.input-form{
+ 		input{
+ 			width: 420px;
+ 			@include box-shadow(none);
+ 		}
+ 	}
+ 	.form-control {
+ 	
+ 	}
+ 	.btn-submit{
+ 		margin-top: 10px;
+
+ 	}
+ }

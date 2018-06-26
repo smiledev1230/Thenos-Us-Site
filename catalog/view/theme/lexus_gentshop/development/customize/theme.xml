@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+	<footer>
+		<title>Footer Block</title>
+		<description></description>
+ 
+	 	<module>
+	 	 	<title>Paypal</title>
+	 	 	<field>
+	 	 		<name>widget_paypal</name>
+	 	 		<label>Paypal</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default> <![CDATA[ <img alt="img" src="image/catalog/paypal.png" /> ]]> </default>
+	 		</field>
+	 	</module>	
+
+	 	<module>
+	 	 	<title>logo</title>
+	 	 	<field>
+	 	 		<name>widget_logo</name>
+	 	 		<label>Logo footer</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default> <![CDATA[ <img alt="img" src="image/catalog/demo/logo-footer.png" /> ]]> </default>
+	 		</field>
+	 	</module>	
+
+	 	<module>
+	 	 	<title>About us</title>
+	 	 	<field>
+	 	 		<name>widget_aboutus</name>
+	 	 		<label>About us</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default> <![CDATA[ 
+	 	 			<div class="box">
+						<div class="box-heading"><span>About Us</span></div>
+						<div class="box-content"><p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit cuat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Morbi acc ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat</p></div>
+					</div>
+	 	 		]]> </default>
+	 		</field>
+	 	</module>
+
+	</footer>	
+	
+</theme>
+

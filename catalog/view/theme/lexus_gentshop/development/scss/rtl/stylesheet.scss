@@ -1,0 +1,31 @@
+@import "../vars/bootstrap";
+@import "../vars/opencart";
+
+.rtl #topbar .quick-access > div:first-child {
+	padding-left: 15px!important;
+}
+.rtl #topbar #cart .heading a {
+    background-position: right 0;
+}
+.rtl #cart .heading a {
+	background-position: right center;
+}
+.rtl .box-module-pavreassurances .box-outer > div:last-child {
+	@include rtl-border-left(1px solid rgba(255,255,255,0.2));
+}
+.rtl .tree-menu > ul > li ul > li > a, .rtl .pav-category > ul > li ul > li > a {
+	background-position: right center;
+}
+.rtl .head {
+    float: left;
+}
+.rtl .comment-item img {
+  float: right!important;
+}
+/* zoom function in product page */
+.rtl .zoomContainer { 
+    .zoomWindow{
+        right: 100% !important;
+        left:auto!important; 
+    }
+}

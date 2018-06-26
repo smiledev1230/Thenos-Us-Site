@@ -1,0 +1,27 @@
+
+.features-carousel .item {
+	text-align: center;
+	background-color: #fff;
+	padding: 30px 15px;
+	border-radius: 3px;
+	margin: 5px;
+}
+.features-carousel .item i {
+	font-size: 40px;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	background-color: #4CAE4C;
+	color: #fff;
+	border-radius: 50%;
+}
+.features-carousel .util-page span {
+	height: 6px;
+	width: 6px;
+	border-radius: 3px;
+	margin: 5px 2px;
+}
+.features-carousel .util-page.active-page span {
+	background-color: #555555;
+	width: 25px;
+}

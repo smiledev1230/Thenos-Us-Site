@@ -1,0 +1,270 @@
+@media (max-width: $screen-md-max){ 
+    .mainnav-v2 {
+        #cart .heading a {
+            h4, #cart-total {
+                display: none;
+            }
+        }
+        .quick-action > div > div {
+            padding: 0 20px!important;
+        }
+        &.main-menu.menu_fixed {
+            .quick-action > div {
+                margin-top: 0;
+            }
+        }
+    }
+    
+}
+/*$media (min-width: 992px) and (max-width: 1199px)*/
+@media (min-width: $screen-md) and (max-width: $screen-md-max){ 
+    .mainnav-v2{
+        .pav-megamenu{
+            text-align: center;
+        }
+        .navbar-nav{
+            display: inline-block;
+            float: none!important;
+        }
+    }
+    .mainnav-v4  {
+        .navbar-nav > li > a {
+            padding: 25px 0;
+        }
+        .quick-action {
+            > div {
+                padding-top: 18px!important;
+            }
+            .search-focus {
+                margin-top: 18px!important;
+            }
+        }
+    }
+    .mainnav-v2 {
+        .pav-megamenu {
+            @include rtl-text-align-left();
+            .navbar-nav > li > a {
+                margin: 0 15px;
+            }
+        }                
+    }
+}
+@media (max-width: $screen-sm-max) {
+    .mainnav-v4 {
+        .canvas-menu {
+            font-size: 15px;
+            padding: 15px;
+        }
+    }
+    .menu_fixed {
+        &.mainnav-v4  {
+            .canvas-menu {
+                padding: 10px;
+            }
+            .quick-action {
+                > div {
+                    padding-top: 18px!important;
+                }
+                .search-focus {
+                    margin-top: 18px!important;
+                }
+            }
+        }
+    }
+    .pav-newsletter .input-form input {
+        width: auto!important;
+    }
+    .box-module-pavreassurances .reassurances-center:hover h4 {
+        letter-spacing: 1px!important;
+    }
+    .product-block {
+        overflow: visible;
+        margin-bottom: 20px;
+        &:hover {
+            .price-quick {
+                @include opacity(0);
+            }
+            .wrap-hover {
+                .price{
+                    @include rtl-left(0);
+                    @include opacity(1);
+                }
+            }
+        }
+        .product-meta {
+            overflow: visible;
+        }
+        .bottom {
+            overflow: visible;
+            .wrap-hover {
+                overflow: visible;
+                .cart {
+                    @include rtl-left(0);
+                    @include opacity(1);
+                    position: static;
+                }
+                .price {
+                    margin: 0 0 15px;
+                    position: static;
+                }
+            }
+        } 
+    }
+    .product-list {
+        .product-block {
+            .bottom .wrap-hover {
+                .cart {
+                    @include rtl-text-align-left();
+                }
+                .price {
+                    height: 30px;
+                }
+            } 
+        }
+    }
+}
+
+/*$media (min-width: 768px) and (max-width: 991px) {*/
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+ 	.products-row:last-child .product-col{
+        margin-bottom: 30px;
+    }
+    .zoomContainer{
+    	display: none!important;
+    }
+    .footer-intro{
+        margin-top: 20px;
+    }
+    #page{
+        padding-top: 0!important;
+        .mainnav-v2{
+            .pav-megamenu{
+                text-align: center;
+            }
+            .navbar-nav{
+                display: inline-block;
+                float: none!important;
+            }
+        }
+    }
+    #page{
+        .header-top-v4{
+            background: #121212!important;
+            position: inherit;
+        }
+    }
+} 
+
+/*$media (max-width: 767px) {*/
+@media (max-width: $screen-xs-max) { 
+    .main-menu.menu_fixed {
+        position: static;
+    }
+    #topbar.topbar-v1 .quick-action > div.search-focus {
+        width: 25px;
+    }  
+    .bannerbuilder {
+        display: none;
+    }
+    .producttabs .tab-nav {
+        @include rtl-text-align-left();
+    }
+    ul.nav-theme > li a {
+        padding:6px 10px;
+    }
+  	.products-row:last-child .product-col{
+        margin-bottom: 30px;
+    }    
+    .zoomContainer{
+    	display: none!important;
+    }
+    .footer-intro{
+        margin-top: 20px;
+    }
+    .box-module-pavreassurances .column .popover{
+        top: 155px!important;
+    }
+    .footer-center .inner,.footer-top .inner {
+        padding: 10px;
+    }
+    /*Disable effect product block*/
+    .product-block{
+        .image{
+            outline: none!important;
+        }
+        &:hover{
+            .image{
+                outline: none!important;
+            }
+            .price-quick{
+               opacity: 0!important;
+               filter:Alpha(opacity=0)!important;
+            }  
+        }
+    }
+    .fixed-footer{
+        position: inherit;
+    }
+    .main-page{
+        margin-bottom: 0!important;
+    }
+    .promotion-center{
+        &:after{
+            @include rtl-left(0);
+        }
+        &:before{
+            @include rtl-right(0);
+        }
+    }
+} 
+
+/*$media (max-width: 480px) {*/
+@media (max-width: $screen-phone) {    
+   .quick-access {
+        .text-label {
+            display: none; 
+        }
+    }
+    .tparrows {
+        display: none!important;
+    }
+    .mainnav-v4 {
+        .cols {
+            width: 100%;
+            &.logo {
+                text-align: center;
+            }
+        }
+    }
+    .mainnav-v2 {
+        .row > div {
+            width: auto;
+            &.logo {
+                display: none;
+            }
+        }
+    }
+    ul.nav-theme > li a {
+        font-size: 13px;
+        margin: 10px 5px;
+        padding: 0;
+        border: none;
+    }
+    .product-list {
+        .image {
+            float: none;
+        }
+        .price-quick {
+            display: none;
+        }
+        .product-block .product-meta {
+            padding: 20px;
+        }
+    }
+    .filter-right > div {
+        display: block;
+        float: none !important;
+        margin-bottom: 10px;
+        @include rtl-text-align-right();
+    }
+}

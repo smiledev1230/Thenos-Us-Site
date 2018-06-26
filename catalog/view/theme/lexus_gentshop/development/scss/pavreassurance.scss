@@ -1,0 +1,82 @@
+
+@import "vars/bootstrap";
+@import "vars/opencart";
+@import "mixins/bootstrap";
+@import "mixins/app";
+
+.box-module-pavreassurances{
+    padding: 0 15px;
+    .box-outer{
+        > div{
+            @include rtl-border-left(1px solid rgba(255,255,255,0.2));
+            &:last-child {
+                border-right: 1px solid rgba(255,255,255,0.2);
+            }
+        }        
+    }
+    .column{
+        position: inherit;
+    }
+    overflow: hidden; 
+    h4 {
+        text-transform: uppercase;
+        font-family: $font-family-tertiary;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 2px;
+        color: $white;
+        margin: 0;
+        @include transition(all 0.35s);
+    }
+    .description{
+        color: #c6c6c6;
+        p {
+            margin: 0;
+        }
+    }
+    .reassurances-center{
+            padding: 30px 0 20px;
+            text-align: center;
+        
+        .icon-read-more{
+            color: $theme-color;
+            background: transparent;
+            border: none;
+            @include opacity(0);
+            &:hover{
+                color: $white;
+            }
+        }
+        &:hover{
+            h4 {
+                letter-spacing: 4px;
+            }
+            .icon-read-more{
+                cursor: pointer;
+                @include opacity(1);
+            }
+        }
+    }
+    .modal {
+        h4 {
+            color: #000;
+        }
+    }
+}
+.title_detail{
+     h4 {
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 50px;
+    }
+    .icon-name {
+        color: #2E3A47;
+        font-size: 170px;
+        margin: 0 20px;
+    }
+    p{
+        color: #8C8C8C;
+        font-size: 15px;
+        margin: 25px 0 0;
+    }
+}

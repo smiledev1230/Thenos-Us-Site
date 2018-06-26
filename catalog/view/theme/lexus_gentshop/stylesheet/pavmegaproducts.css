@@ -1,0 +1,57 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/*  
+ * LAYOUT VARIABLES 
+ */
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/*inline-block
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+.megaproducts {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.megaproducts .mega-loadmore {
+  width: 100%;
+}
+
+.megaproducts .btn-filter {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 14px;
+  color: black;
+  background: url("../image/bullet-filter.png") no-repeat left 19px;
+}
+
+.megaproducts .btn-filter.active {
+  background-image: url("../image/bullet-filter-red.png");
+  color: #6cabd5;
+}
+
+.megaproducts .mega-filters {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 40px;
+}
+
+.megaproducts .element-item {
+  padding-bottom: 35px;
+}

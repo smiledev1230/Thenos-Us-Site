@@ -1,0 +1,39 @@
+@import "vars/bootstrap";
+@import "vars/opencart";
+
+
+@import "mixins/bootstrap";
+@import "mixins/app";
+
+.megaproducts{
+	position: relative;
+	padding-bottom: 15px;
+}
+.megaproducts .mega-loadmore{
+	width: 100%;
+	
+}
+.megaproducts .btn-filter{ 
+	border: none;
+	background: transparent;
+	text-transform: uppercase;
+	padding: 15px;
+	font-size: 14px;
+    color: black;
+	background: url("../image/bullet-filter.png") no-repeat left 19px;
+}
+.megaproducts .btn-filter.active{
+	background-image: url('../image/bullet-filter-red.png');
+	color: $theme-color;
+}
+.megaproducts .mega-filters{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #F2F2F2;
+	margin-bottom: 40px;
+
+}
+.megaproducts .element-item{
+	padding-bottom: 35px;
+} 

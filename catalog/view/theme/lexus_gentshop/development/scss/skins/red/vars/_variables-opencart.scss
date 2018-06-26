@@ -1,0 +1,19 @@
+// Iconography
+// -------------------------
+$icon-font-path:          "../../fonts/";
+$theme-font-path:          "../../fonts/";
+// Image
+// -------------------------
+$image-theme-path:'../../image/red/';
+$image-theme-base-path:  '../../image/'!default;
+
+
+
+$theme-color           : #e85663; 
+$theme-color-default   : #e85663;
+$product-name-font-size: $font-size-base + 3;
+$megamenu-link-hover-color: $theme-color;
+$product-name-hover-color: $theme-color;
+$topbar-link-color: $theme-color;
+$megamenu-sub-link-hover-color: $theme-color;
+$footer-link-hover-color: $theme-color;
