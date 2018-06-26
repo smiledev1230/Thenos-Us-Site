@@ -88,6 +88,11 @@ enclosure made for the Sonos Play:1">
             
             <header>
                 <nav class="navbar fixed-nav navbar-default  navbar-fixed-top" id="main-navbar" role="navigation">
+                    <div class="header-title">
+                        <a href="http://www.thenos.us/index.php?route=product/category&path=59">
+                            <span class="header-text">The highly anticipated In-Ceiling PlayBox is now available for pre-order!</span>
+                        </a>
+                    </div>
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
