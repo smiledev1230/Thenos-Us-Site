@@ -3609,11 +3609,21 @@ footer
 .header-text:hover {
     color: #EA9107;
 }
-.service.text-center img {
-    height: 226px;
+.model-container .service.text-center img {
+    height: 226px;    
 }
-
-
+.model-container .service.text-center h4 {
+    font-weight: bold;
+}
+.model-container .service.text-center h4 p:first-child {  
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.model-container .service.text-center h4 p:last-child {  
+    font-size: 12px;
+    font-weight: 300;
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.

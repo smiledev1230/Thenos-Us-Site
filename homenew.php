@@ -1,6 +1,6 @@
 <?php
 if($_GET['click']!='model'){$home=true;}
-include("includes/header.php");
+include("includes/headernew.php");
 ?>
 <script type="text/javascript">
     $(document).ready(function(){
@@ -387,7 +387,7 @@ Richardson, TX</div>
                         
             <!-- Service Section-->            
             <section id="service" class="sections colorsbg">
-                <div class="container">
+                <div class="container model-container">
                     <div class="row">
                         <div class="heading">
                             <div class="title text-center"><h1>models</h1></div>
@@ -398,7 +398,7 @@ Richardson, TX</div>
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
                               <a href="http://www.thenos.us/index.php?route=product/product&path=59&product_id=50" style="color:white">
                                 <img src="images/uploads/PlayBox-Models-PB1-PRO.png" />
-                                <h4>Thenos Wall PlayBox PRO<br/>Model: PB1-W-PRO</h4><br/>
+                                <h4>Thenos Wall PlayBox PRO<p>Model: PB1-W-PRO</p><P>RESIDENTIAL & COMMERCIAL</P></h4><br/>
                                 <p>Designed for professional installations. Allows for a clean, cable-free look within the home.</p>
                               </a>
                             </div>
@@ -411,7 +411,7 @@ Richardson, TX</div>
                             <div class="service text-center " data-wow-offset="120" data-wow-duration="1.5s">
                               <a href="http://www.thenos.us/index.php?route=product/product&path=59&product_id=51" style="color:white">
                                 <img src="images/uploads/PlayBox-Models-PB1-EZ.png" />
-                                <h4>Thenos Wall PlayBox EZ <br/>Model: PB1-W-EZ</h4><br/>
+                                <h4>Thenos Wall PlayBox EZ <p>Model: PB1-W-EZ</p><P>FOR RESIDENTIAL</P></h4><br/>
                                 <p>Ideal for retrofit scenarios. Use the power relocation kit to easily plug the PlayBox into the nearest outlet.</p>
                               </a>
                             </div>
@@ -424,7 +424,7 @@ Richardson, TX</div>
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
                               <a href="commercial.php"  style="color:white">
                                 <img src="images/uploads/PlayBox-Models-PB1-COM.png" />
-                                <h4>Thenos Wall PlayBox COM <br>Model: PB1-W-COM</h4><br/>
+                                <h4>Thenos Wall PlayBox COM <p>Model: PB1-W-COM</p><P>FOR RESIDENTIAL</P></h4><br/>
                                 <p>The in-wall PlayBox that meets commercial code, tailor made for he business enviroment.</p>
                               </a>
                             </div>
@@ -438,8 +438,8 @@ Richardson, TX</div>
                     <div class="row" style="padding-top:80px">
                         <div class="col-sm-4">
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
-                                <img src="images/PlayBox-Models-PB1-C.png" />
-                                <h4>Thenos Ceiling PlayBox <br/>Model: PB1-C</h4><br/>
+                                <img src="images/PlayBox-Models-PB1-C-new.png" />
+                                <h4>Thenos Ceiling PlayBox<p>Model: PB1-C</p><P>FOR RESIDENTIAL</P></h4><br/>
                                 <p style="padding: 0px 20px;">In-ceiling solution for Sonos One (tm) & Play:1(tm). Create ulti-room audio systems while eliminating racks and amps.</p>
                             </div>
                         	<div class="text-center ">
@@ -449,8 +449,8 @@ Richardson, TX</div>
 
                         <div class="col-sm-4">
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
-                                <img src="images/PlayBox-Models-PB1-Pendants.png" />
-                                <h4>Thenos Pendant Housing <br>Model: PSH1</h4><br/>
+                                <img src="images/PlayBox-Models-PB1-Pendants-new.png" />
+                                <h4>Thenos Pendant Housing<p>Model: PSH1</p><P>FOR RESIDENTIAL</P></h4><br/>
                                 <p style="padding: 0px 20px;">A pendant kit made for the PB1-C with multiple connectivity ptions, for open ceiling environments.</p>
                             </div>
                             <div class="text-center ">
@@ -460,8 +460,8 @@ Richardson, TX</div>
 
                         <div class="col-sm-4">
                             <div class="service text-center " data-wow-offset="120" data-wow-duration="1.5s">
-                                <img src="images/PlayBox-Models-PB3.png" />
-                                <h4>PlayBox System Accessories <br/>Available: Q2 & Q3</h4><br/>
+                                <img src="images/PlayBox-Models-PB3-new.png" />
+                                <h4>PlayBox System Accessories<p>Available: Q2 & Q3</p><P>FOR RESIDENTIAL</P></h4><br/>
                                 <p style="padding: 0px 20px;">A range of complimentary solutions developed for the PlayBox and he installation of Streaming Sound Systems.</p></a>
                             </div>
                         	<div class="text-center ">
