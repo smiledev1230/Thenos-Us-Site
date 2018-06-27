@@ -440,7 +440,7 @@ Richardson, TX</div>
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
                                 <img src="images/PlayBox-Models-PB1-C.png" />
                                 <h4>Thenos Ceiling PlayBox <br/>Model: PB1-C</h4><br/>
-                                <p>In-ceiling solution for Sonos One (tm) & Play:1(tm). Create ulti-room audio systems while eliminating racks and amps.</p>
+                                <p style="padding: 0px 20px;">In-ceiling solution for Sonos One (tm) & Play:1(tm). Create ulti-room audio systems while eliminating racks and amps.</p>
                             </div>
                         	<div class="text-center ">
                                 <a href="http://www.thenos.us/subscribe.php" class="btn download-btn">Pre-Order Now</a>
@@ -448,24 +448,24 @@ Richardson, TX</div>
                         </div><!--end 4 col-->
 
                         <div class="col-sm-4">
-                            <div class="service text-center " data-wow-offset="120" data-wow-duration="1.5s">
-                                <img src="images/PlayBox-Models-PB3.png" />
-                                <h4>PlayBox System Accessories <br/>Available: Q2 & Q3</h4><br/>
-                                <p>A range of complimentary solutions developed for the PlayBox and he installation of Streaming Sound Systems.</p></a>
+                            <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
+                                <img src="images/PlayBox-Models-PB1-Pendants.png" />
+                                <h4>Thenos Pendant Housing <br>Model: PSH1</h4><br/>
+                                <p style="padding: 0px 20px;">A pendant kit made for the PB1-C with multiple connectivity ptions, for open ceiling environments.</p>
                             </div>
-                        	<div class="text-center ">
-                                <a href="http://www.thenos.us/subscribe.php" class="btn download-btn">Update Me</a>
+                            <div class="text-center ">
+                                <a href="/subscribe.php" class="btn download-btn">Update Me</a>  
                             </div>
                         </div><!--end 4 col-->
 
                         <div class="col-sm-4">
-                            <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
-                                <img src="images/PlayBox-Models-PB1-Pendants.png" />
-                                <h4>Thenos Pendant Housing <br>Model: PSH1</h4><br/>
-                                <p>A pendant kit made for the PB1-C with multiple connectivity ptions, for open ceiling environments.</p>
+                            <div class="service text-center " data-wow-offset="120" data-wow-duration="1.5s">
+                                <img src="images/PlayBox-Models-PB3.png" />
+                                <h4>PlayBox System Accessories <br/>Available: Q2 & Q3</h4><br/>
+                                <p style="padding: 0px 20px;">A range of complimentary solutions developed for the PlayBox and he installation of Streaming Sound Systems.</p></a>
                             </div>
                         	<div class="text-center ">
-                                <a href="/subscribe.php" class="btn download-btn">Update Me</a>  
+                                <a href="http://www.thenos.us/subscribe.php" class="btn download-btn">Update Me</a>
                             </div>
                         </div><!--end 4 col-->
                     </div><!--end row-->

@@ -3609,6 +3609,9 @@ footer
 .header-text:hover {
     color: #EA9107;
 }
+.service.text-center img {
+    height: 226px;
+}
 
 
 /* ==========================================================================
