@@ -683,7 +683,7 @@ NAVIGATIONS
     border-style: solid;
     border-width: 0px 0px 1px 0px;
 	border-color:#035b84}
-.circlelogo{height:135px!important;max-height:135px!important}
+.circlelogo{height:90px!important;max-height:135px!important}
 a.top-logo{
     position: relative;
     font-size: 20px;
@@ -3601,11 +3601,11 @@ footer
     text-align: center;
 }
 .header-text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     font-family: Raleway;
     color: #3aa5f2;
-	line-height:50px;
+    line-height: 34px;
 }
 .header-text:hover {
     color: #EA9107;
@@ -3670,7 +3670,7 @@ footer
         font-size: 10px !important;
     }
     .circlelogo {
-        height: 130px!important;
+        height: 90px !important;
     }
 }
 @media print,

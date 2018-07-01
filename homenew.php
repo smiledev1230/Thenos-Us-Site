@@ -20,7 +20,7 @@ include("includes/headernew.php");
         <div class="flexslider">
             <ul class="slides">
                 <li class="flex-active-slide">
-                    <div class="img-area yt-video-section" data-yt-video="KYqv_5TN-VM" style="margin-top:100px">
+                    <div class="img-area yt-video-section" data-yt-video="KYqv_5TN-VM" style="margin-top:135px">
                     	<div class="mailbgplaybox">
                         <img alt="playbox" src="/images/mainbg.jpg" draggable="false">
                         </div>
