@@ -875,8 +875,9 @@ a.top-logo{
 /*fixed nav light*/
 
 .fixed-nav.navbar{
-    background: rgba(76,158,218,0.7);
-  }
+    /*background: rgba(76,158,218,0.7);*/
+    background: #3AA5F2;
+}
 .navbar.fixed-nav .navbar-nav>li>a {
     color: #fff;
     text-transform: uppercase;

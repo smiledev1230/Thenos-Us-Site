@@ -10,6 +10,28 @@ include("includes/headernew.php");
         }
     })
 </script>
+<style>
+@font-face {
+    font-family: "GothamMedium";
+    src: url("fonts/GothamMedium_1.ttf")  format("truetype");
+}
+.navbar.fixed-nav .navbar-nav>li>a{
+	font-family:"GothamMedium";
+}
+@media (min-width: 768px) {
+    #navbar-collapse {
+        text-align: center;
+    }
+    #navbar-collapse .navbar-center {
+        margin: 0px auto;
+        float: unset !important;
+    }
+    #navbar-collapse .navbar-center>li {
+        float: unset;
+        display: inline-block;
+    }
+}
+</style>
 <link rel="stylesheet" href="css/app.css">
 
 <section id="home1" class="home2">

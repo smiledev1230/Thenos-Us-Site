@@ -107,29 +107,17 @@ enclosure made for the Sonos Play:1">
 
                         <div class="collapse navbar-collapse" id="navbar-collapse">
 
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="<?php if(!$home) echo 'home.php'; ?>#whatis">what's PlayBox&trade;?</a></li>
-                                
-                                <li><a href=<?php if(!$home) echo 'home.php'; ?>#models>models</a></li>
-                                <li><a href="/commercial.php">commercial</a></li>
-                                <!--<li><a href="http://www.thenos.us/Thenos%20PlayBox%20Spec%20Sheet%202016.pdf" target="_blank">PDF</a></li>-->
-                                 <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PDF</a>
-          <ul class="dropdown-menu">
-            <li><a href="http://www.thenos.us/Thenos%20PlayBox%20Spec%20Sheet%202016.pdf" target="_blank">PlayBox Spec Sheet</a></li>
-            <li><a href="http://www.thenos.us/pdf/Thenos%20Streaming%20Sound%20System%205x7%20PDF%20Brochure.pdf" target="_blank">PlayBox Overview</a></li>
-            <li><a href="http://www.thenos.us/pdf/Thenos PlayBox PB1 - PDF Wall Template.pdf" target="_blank">Install Template - PB1-W</a></li>
-           
-          </ul>
-        </li>
-                                <li><a href=<?php if(!$home) echo 'home.php'; ?>#screenshot>videos/photos</a></li>
-                                <li class="activemenu"><a href="dealer.php">resellers</a></li>
-                                <!--<li><a href="about.php">about</a></li>-->
-                                <li><a href="contact.php">contact</a></li>
-                                <li>
-                                        <a href="http://www.thenos.us/index.php?route=product/category&path=59" class="btn btn-default download-btnsmall" id="downloadsmall">shop</a></li>
-                                <li>
-                                        <a href="http://www.thenos.us/index.php?route=account/login" class="btn btn-default download-btnsmall" id="downloadsmallwhite">sign-in</a></li>
+                            <ul class="nav navbar-nav navbar-center">
+                                <li><a href="#">PLAYBOX CEILING</a></li>
+                                <li><a href="#">WALL</a></li>
+                                <li><a href="#">SYSTEMS</a></li>
+                                <li><a href="#">COMMERCIAL</a></li>
+                                <li style="float: right">
+                                    <a href="http://www.thenos.us/index.php?route=account/login" class="btn btn-default download-btnsmall" id="downloadsmallwhite">sign-in</a>
+                                </li>
+                                <li style="float: right">
+                                    <a href="http://www.thenos.us/index.php?route=product/category&path=59" class="btn btn-default download-btnsmall" id="downloadsmall">shop</a>
+                                </li>
                             </ul>
                         </div>  <!--end collapse -->
                     </div>  <!--end container -->
