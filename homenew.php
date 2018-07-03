@@ -17,10 +17,12 @@ include("includes/headernew.php");
 }
 .navbar.fixed-nav .navbar-nav>li>a{
 	font-family:"GothamMedium";
+    font-size: 18px;
 }
 @media (min-width: 768px) {
     #navbar-collapse {
         text-align: center;
+        margin-right: 102px;
     }
     #navbar-collapse .navbar-center {
         margin: 0px auto;

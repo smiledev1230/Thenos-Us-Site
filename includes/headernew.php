@@ -112,11 +112,11 @@ enclosure made for the Sonos Play:1">
                                 <li><a href="#">WALL</a></li>
                                 <li><a href="#">SYSTEMS</a></li>
                                 <li><a href="#">COMMERCIAL</a></li>
-                                <li style="float: right">
-                                    <a href="http://www.thenos.us/index.php?route=account/login" class="btn btn-default download-btnsmall" id="downloadsmallwhite">sign-in</a>
-                                </li>
-                                <li style="float: right">
+                                <li style="position: absolute;right: 150px;">
                                     <a href="http://www.thenos.us/index.php?route=product/category&path=59" class="btn btn-default download-btnsmall" id="downloadsmall">shop</a>
+                                </li>
+                                <li style="position: absolute;right: 40px;">
+                                    <a href="http://www.thenos.us/index.php?route=account/login" class="btn btn-default download-btnsmall" id="downloadsmallwhite">sign-in</a>
                                 </li>
                             </ul>
                         </div>  <!--end collapse -->
