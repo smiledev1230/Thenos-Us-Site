@@ -61,6 +61,23 @@ enclosure made for the Sonos Play:1">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<style>
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url("/fonts/GothamMedium_1.ttf")  format("truetype");
+}
+
+.header-text {
+    font-size: 14px;
+	font-family:"GothamMedium";
+    color: #3aa5f2;
+    line-height: 34px;
+}
+.header-text:hover {
+    color: #EA9107;
+}
+</style>
     </head>
     <body data-spy="scroll" data-target="#main-navbar">
     
@@ -88,6 +105,11 @@ enclosure made for the Sonos Play:1">
             
             <header>
                 <nav class="navbar fixed-nav navbar-default  navbar-fixed-top" id="main-navbar" role="navigation">
+                	<div class="header-title">
+                        <a href="http://www.thenos.us/index.php?route=product/category&path=59">
+                            <span class="header-text">LIMITED TIME PROMO: Order a PlayBox pair or more and get FREE SHIPPING!</span>
+                        </a>
+                    </div>
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
