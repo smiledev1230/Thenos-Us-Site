@@ -122,7 +122,7 @@ enclosure made for the Sonos Play:1">
                             <a href="home.php" class="navbar-brand top-logo"><img src="image/thenoscircle.png" class="circlelogo"></a>
                         </div>  <!--end navbar-header -->
 
-                        <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <div class="collapse navbar-collapse home-header" id="navbar-collapse">
 
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="<?php if(!$home) echo 'home.php'; ?>#whatis">what's PlayBox&trade;?</a></li>
@@ -143,9 +143,9 @@ enclosure made for the Sonos Play:1">
                                 <li class="activemenu"><a href="dealer.php">resellers</a></li>
                                 <!--<li><a href="about.php">about</a></li>-->
                                 <li><a href="contact.php">contact</a></li>
-                                <li>
+                                <li class="home-shop-btn">
                                         <a href="http://www.thenos.us/index.php?route=product/category&path=59" class="btn btn-default download-btnsmall" id="downloadsmall">shop</a></li>
-                                <li>
+                                <li class="home-sign-btn">
                                         <a href="http://www.thenos.us/index.php?route=account/login" class="btn btn-default download-btnsmall" id="downloadsmallwhite">sign-in</a></li>
                             </ul>
                         </div>  <!--end collapse -->
