@@ -16,8 +16,9 @@ include("includes/headernew.php");
     src: url("fonts/GothamMedium_1.ttf")  format("truetype");
 }
 .navbar.fixed-nav .navbar-nav>li>a{
-	font-family:"GothamMedium";
-    font-size: 18px;
+	/*font-family:"GothamMedium";*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;    
 }
 .navbar.fixed-nav .navbar-nav>li>a:hover{
 	color:#32475F!important;
