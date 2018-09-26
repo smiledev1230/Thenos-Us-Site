@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "GothamMedium";
+    src: url("fonts/GothamMedium_1.ttf")  format("truetype");
+}
+.navbar.fixed-nav .navbar-nav>li>a{
+    font-family:"GothamMedium";
+    font-size: 18px;    
+}
+.navbar.fixed-nav .navbar-nav>li>a:hover{
+    color:#32475F!important;
+    text-shadow:none!important;
+}
+
+.home-header#navbar-collapse {
+    text-align: center;
+    position: relative;
+    padding: 0px 155px 0px 85px;
+    margin-right: 0px;
+}
+.home-header#navbar-collapse .nav.navbar-nav {
+    float: unset !important;
+    display: inline-block;
+}
+.home-header .home-shop-btn {
+    position: absolute;
+    right: 100px;
+}
+.home-header .home-sign-btn {
+    position: absolute;
+    right: 0px;
+}
+.main-menu.mainnav-v1 {
+    background: #3AA5F2;
+}
+#header-top .pav-megamenu .navbar-nav > li > a {
+    font-family: "GothamMedium";
+    font-size: 18px;
+}
+@media (min-width: 768px) {
+    #navbar-collapse {
+        text-align: center;
+        margin-right: 102px;
+    }
+    #navbar-collapse .navbar-center {
+        margin: 0px auto;
+        float: unset !important;
+    }
+    #navbar-collapse .navbar-center>li {
+        float: unset;
+        display: inline-block;
+    }
+    .container {
+        width: 100% !important;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

@@ -71,22 +71,18 @@
 		<?php echo $search; ?>
 	</div>	
 	<div class="container"> <div class="row">
-		<div class="col-md-2 logo inner">					
+		<div class="logo inner navbar-header">					
 			<?php if( $logoType=='logo-theme'){ ?>
-			<div id="logo-theme" class="logo-store">
-				<a href="/home.php">
-					<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" />
-				</a>
-			</div>
+			<a href="/home.php" class="navbar-brand top-logo">
+				<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="circlelogo" />
+			</a>
 			<?php } elseif ($logo) { ?>
-			<div id="logo" class="logo-store">
-				<a href="/home.php">
-					<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" />
-				</a>
-			</div>
+			<a href="/home.php" class="navbar-brand top-logo">
+				<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="circlelogo" />
+			</a>
 			<?php } ?> 
 		</div>	
-		<div id="pav-mainnav" class="col-md-10">
+		<div id="pav-mainnav" class="col-md-12">
 			<div class="pav-megamenu">			
 				<button data-toggle="offcanvas" class="canvas-menu hidden-lg hidden-md" type="button"><span class="fa fa-bars"></span> Menu</button>
 				<?php

@@ -3789,21 +3789,3 @@ color:#000;
 .heading{
     font-family: 'Raleway', sans-serif;
 }
-
-.home-header#navbar-collapse {
-    text-align: center;
-    position: relative;
-    padding: 0px 155px 0px 85px;
-}
-.home-header#navbar-collapse .nav.navbar-nav {
-    float: unset !important;
-    display: inline-block;
-}
-.home-header .home-shop-btn {
-    position: absolute;
-    right: 85px;
-}
-.home-header .home-sign-btn {
-    position: absolute;
-    right: 0px;
-}

@@ -5130,3 +5130,108 @@ a.colorlink:hover{color:black;text-decoration:underline}
 .text-right a {
     color: #ffffff!important;
 }
+
+/*
+ *
+ */
+@font-face {
+    font-family: "GothamMedium";
+    src: url("../fonts/GothamMedium_1.ttf")  format("truetype");
+}
+.mainnav-v1 .container {
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #035b84;
+}
+.header-title {
+    background-color: #32475f;
+    text-align: center;
+}
+.header-title a {
+    color: #428bca;
+}
+.header-text {
+    font-size: 14px;
+    font-family: "GothamMedium";
+    color: #3aa5f2;
+    line-height: 34px;
+    font-weight: bold;
+}
+.main-menu.mainnav-v1 {
+    background: #3AA5F2;
+}
+a.top-logo {
+    position: relative;
+    font-size: 20px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.4;
+    max-width: 178px;
+}
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+    color: #777;
+}
+.navbar-brand>img {
+    width: auto;
+    max-width: none;
+    margin-top: -10px;
+}
+.navbar-brand>img {
+    display: block;
+}
+.circlelogo {
+    height: 90px!important;
+    max-height: 135px!important;
+}
+.mainnav-v1 .pav-megamenu .navbar-collapse.collapse {
+  padding-top: 5px;
+}
+.mainnav-v1 .pav-megamenu .navbar-nav {
+    float: unset !important;
+    display: inline-block;
+}
+.pav-megamenu .navbar .navbar-header {
+    text-align: center;
+    margin-right: 102px;
+    width: auto !important;
+}
+.megamenu .preoderbtn {
+    position: absolute;
+    right: 150px;
+}
+#header-top .pav-megamenu .navbar-nav > li.preoderbtn a {
+    padding: 10px;
+    margin-top: 3px;
+    background: #E88500 !important;
+    color: #fff !important;
+    border-radius: 4px;
+}
+.megamenu .sign-in {
+    position: absolute;
+    right: 40px;
+}
+#header-top .pav-megamenu .navbar-nav > li.sign-in a {
+    padding: 10px;
+    margin-top: 3px;
+    color: #fff;
+    background: rgba(75,158,218, 1);
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+#header-top .pav-megamenu .navbar-nav > li > a {
+    font-family: "GothamMedium";
+    font-size: 18px;
+}
+@media (min-width: 768px)  {
+  .container {
+      width: 100% !important;
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+  .navbar-header {
+      float: left;
+  }  
+}

@@ -2,7 +2,7 @@
 <html><head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <title><?php echo $title; ?> Thenos | Makers of the PlayBox  </title>
+       <title><?php echo $title; ?> Thenos | PlayBox - In-Wall & In-Ceiling Solution for Sonos  </title>
         
         <meta name="description" content="Thenos is based in Dallas, TX and the makers of the PlayBox. The PlayBox by thenos is an in-wall 
 enclosure made for the Sonos Play:1">
@@ -37,27 +37,18 @@ enclosure made for the Sonos Play:1">
         <link rel="stylesheet" href="css/responsive.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         
-<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
 
 
 <link rel="stylesheet" style="text/css" href="catalog/zenchat/cosmetic_zenchat.css"/>
 <script type="text/javascript" src="catalog/zenchat/cookie.js"></script>
 
-<meta property="og:image" content="http://www.thenos.us/images/logo.jpg" />
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
@@ -70,7 +61,7 @@ enclosure made for the Sonos Play:1">
 
 .header-text {
     font-size: 14px;
-	font-family:"GothamMedium";
+    font-family:"GothamMedium";
     color: #3aa5f2;
     line-height: 34px;
 }
@@ -105,9 +96,8 @@ enclosure made for the Sonos Play:1">
             
             <header>
                 <nav class="navbar fixed-nav navbar-default  navbar-fixed-top" id="main-navbar" role="navigation">
-                	<div class="header-title">
-                        <a href="http://www.thenos.us/index.php?route=product/category&path=59">
-                            <span class="header-text">LIMITED TIME PROMO: Order a PlayBox pair or more and get FREE SHIPPING!</span>
+                    <div class="header-title">
+                        <a href="http://www.thenos.us/index.php?route=product/product&path=59&product_id=54"> <span class="header-text"><span style="color:orange">PB1-C PRE-ORDER IS HERE:</span> Hurry, the highly anticipated In-Ceiling PlayBox arriving with limited availability!</span>
                         </a>
                     </div>
                     <div class="container">
@@ -119,13 +109,13 @@ enclosure made for the Sonos Play:1">
                                 <span class="icon-bar"></span>
                             </button>
 
-                            <a href="home.php" class="navbar-brand top-logo"><img src="image/thenoscircle.png" class="circlelogo"></a>
+                            <a href="/home.php" class="navbar-brand top-logo" style="z-index:99999"><img src="image/thenoscircle.png" class="circlelogo"></a>
                         </div>  <!--end navbar-header -->
 
                         <div class="collapse navbar-collapse home-header" id="navbar-collapse">
 
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="<?php if(!$home) echo 'home.php'; ?>#whatis">what's PlayBox&trade;?</a></li>
+                            <ul class="nav navbar-nav">
+                                
                                 
                                 <li><a href=<?php if(!$home) echo 'home.php'; ?>#models>models</a></li>
                                 <li><a href="/commercial.php">commercial</a></li>
