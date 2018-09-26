@@ -5194,28 +5194,28 @@ a.top-logo {
     display: inline-block;
 }
 .pav-megamenu .navbar .navbar-header {
-    text-align: center;
-    margin-right: 102px;
+    margin-right: 190px;
     width: auto !important;
+    float: none;
 }
 .megamenu .preoderbtn {
     position: absolute;
-    right: 150px;
+    right: 115px;
 }
 #header-top .pav-megamenu .navbar-nav > li.preoderbtn a {
     padding: 10px;
-    margin-top: 3px;
+    margin-top: 26px;
     background: #E88500 !important;
     color: #fff !important;
     border-radius: 4px;
 }
 .megamenu .sign-in {
     position: absolute;
-    right: 40px;
+    right: 5px;
 }
 #header-top .pav-megamenu .navbar-nav > li.sign-in a {
     padding: 10px;
-    margin-top: 3px;
+    margin-top: 24px;
     color: #fff;
     background: rgba(75,158,218, 1);
     border: 1px solid #fff;
@@ -5223,6 +5223,24 @@ a.top-logo {
 }
 #header-top .pav-megamenu .navbar-nav > li > a {
     font-family: "GothamMedium";
+    font-size: 18px;
+}
+#topbar .quick-access {
+    padding-top: 10px;
+}
+#topbar .quick-access > div, #topbar .quick-access > div a, #cart h4, .shopping-cart .cart-inner #cart-total {
+    font-family: "GothamMedium";
+    font-size: 14px;
+}
+#cart h4, .shopping-cart .cart-inner #cart-total {
+    color: #a0a0a0;
+}
+.canvas-menu {
+    position: absolute;
+    top: 88px;
+    right: 0px;
+}
+.canvas-menu .fa {
     font-size: 18px;
 }
 @media (min-width: 768px)  {
@@ -5234,4 +5252,9 @@ a.top-logo {
   .navbar-header {
       float: left;
   }  
+}
+@media (max-width: 1110px)  {
+  #header-top .pav-megamenu .navbar-nav > li > a {
+      font-size: 12px;
+  }
 }

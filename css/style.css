@@ -912,7 +912,7 @@ a.top-logo{
 .fixed-nav .navbar-toggle{
     margin-bottom: 12px;
     margin-top: 13px;
-
+    cursor: pointer;
 }
 
 

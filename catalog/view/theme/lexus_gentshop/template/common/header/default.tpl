@@ -82,7 +82,7 @@
 			</a>
 			<?php } ?> 
 		</div>	
-		<div id="pav-mainnav" class="col-md-12">
+		<div id="pav-mainnav">
 			<div class="pav-megamenu">			
 				<button data-toggle="offcanvas" class="canvas-menu hidden-lg hidden-md" type="button"><span class="fa fa-bars"></span> Menu</button>
 				<?php
