@@ -702,30 +702,6 @@ $('#DOPThumbnailScrollerContainer3').DOPThumbnailScroller({'URL': 'http://www.th
                                         
                                         <!-- Begin MailChimp Signup Form -->
                                         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-                                        <style type="text/css">
-                                            #mc_embed_signup{margin-top: 0px;color:#fff;background:#4c9eda; clear:left; font:14px Helvetica,Arial,sans-serif;border-radius: 3px;padding: 10px; }
-                                            .subscribe-form3 form {
-                                                margin-top: 30px;
-                                                color: #fff;
-                                            }
-                                            .subscribe-form3 form a {
-                                                color: #ffa500;
-                                            }
-                                            #mc-embedded-subscribe {
-                                                margin: 0;
-                                            }
-
-#mc_embed_signup .mc-field-group input {
-    display: block!important;
-    width: 300px!important;
-    margin: 0 auto!important;
-}
-.subscribe-form3 {
-    width: 500px;
-    display: block;
-    margin: 0 auto;
-}
-                                        </style>
                                         <div id="mc_embed_signup">
                                         <div class="title text-center"><h1>Stay Informed:</h1></div>
                                         <p class="white-text">Get updates related to thenos and the PlayBox<sup>&trade;</sup></p>

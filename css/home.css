@@ -36,6 +36,38 @@
     font-family: "GothamMedium";
     font-size: 18px;
 }
+/* subscribe form style */
+#mc_embed_signup {
+    margin-top: 0px;
+    color:#fff;
+    background:#4c9eda;
+    clear:left; font:14px Helvetica,Arial,sans-serif;
+    border-radius: 3px;
+    padding: 10px;
+}
+.subscribe-form3 form {
+    margin-top: 30px;
+    color: #fff;
+}
+.subscribe-form3 form a {
+    color: #ffa500;
+}
+#mc-embedded-subscribe {
+    margin: 0;
+}
+#mc_embed_signup .mc-field-group {
+    display: block;
+}
+#mc_embed_signup .mc-field-group input {
+    display: block!important;
+    max-width: 300px!important;
+    margin: 0 auto!important;
+}
+.subscribe-form3 {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
 @media (min-width: 768px) {
     #navbar-collapse {
         text-align: center;
