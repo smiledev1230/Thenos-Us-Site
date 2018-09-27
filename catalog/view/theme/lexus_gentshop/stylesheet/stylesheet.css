@@ -5168,6 +5168,7 @@ a.top-logo {
     text-align: center;
     line-height: 1.4;
     max-width: 178px;
+    z-index: 100;
 }
 .navbar-brand {
     float: left;
@@ -5242,6 +5243,54 @@ a.top-logo {
 }
 .canvas-menu .fa {
     font-size: 18px;
+}
+#footer .footer-center .container {
+    font-size: 14px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: #2d2d2d;
+    color: #fff;
+    background-image: url(../image/footer-paint-splatter.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.footer-center p {
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    font-size: 16px;
+}
+.footer-center small {
+    font-family: 'Open Sans', sans-serif;
+}
+.footer-center .footer-logo {
+    vertical-align:top;
+}
+.footer-center .footer-logo p {
+    padding-left: 35px;
+}
+.footer-center .additional-links a {
+    color: #bdc3c7;
+    text-decoration: underline;
+}
+.footer-center .additional-links2 a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.footer-center .emailtext {
+    color: #428bca;
+    font-size: 16px;
+    line-height: 25px;
+}
+.footer-center .social-btns > a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
 }
 @media (min-width: 768px)  {
   .container {
