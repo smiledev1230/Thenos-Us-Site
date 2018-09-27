@@ -5278,7 +5278,7 @@ a.top-logo {
     color: #fff !important;
     text-decoration: none !important;
 }
-.footer-center .emailtext {
+#footer .footer-center .emailtext {
     color: #428bca;
     font-size: 16px;
     line-height: 25px;

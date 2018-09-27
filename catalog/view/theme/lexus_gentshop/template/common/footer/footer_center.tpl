@@ -3,7 +3,7 @@
         <div class="row v-center">
             <div class="col-sm-3 .col-sm-4 footer-logo">
            
-            <p style="padding-left:35px"><img src="images/footlogo.png" hspace=5 alt="thenos" style="float:left;"/>
+            <p><img src="images/footlogo.png" hspace=5 alt="thenos" style="float:left;"/>
              makers <br>
 of the <br>
 PlayBox<sup>&trade;</sup></p>
