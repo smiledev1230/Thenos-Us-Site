@@ -45,6 +45,11 @@
     border-radius: 3px;
     padding: 10px;
 }
+.subscribe-form3 {
+    max-width: 560px;
+    display: block;
+    margin: 0 auto;
+}
 .subscribe-form3 form {
     margin-top: 30px;
     color: #fff;
@@ -59,14 +64,8 @@
     display: block;
 }
 #mc_embed_signup .mc-field-group input {
-    display: block!important;
     max-width: 300px!important;
     margin: 0 auto!important;
-}
-.subscribe-form3 {
-    max-width: 500px;
-    display: block;
-    margin: 0 auto;
 }
 @media (min-width: 768px) {
     #navbar-collapse {
@@ -81,7 +80,7 @@
         float: unset;
         display: inline-block;
     }
-    .container {
+    header .navbar-fixed-top .container {
         width: 100% !important;
         padding-left: 40px;
         padding-right: 40px;
