@@ -62,6 +62,7 @@
 }
 #mc_embed_signup .mc-field-group {
     display: block;
+    text-align: center;
 }
 #mc_embed_signup .mc-field-group input {
     max-width: 300px!important;
