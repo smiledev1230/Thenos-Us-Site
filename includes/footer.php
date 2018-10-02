@@ -4,13 +4,12 @@
 <footer id="footer" class="footer-3">
     <div class="container">
         <div class="row v-center">
-            <div class="col-sm-3 .col-sm-4" style="vertical-align:top">
-           
-            <p style="padding-left:35px"><img src="images/footlogo.png" hspace=5 alt="thenos" style="float:right;max-height: 90px;"/></p>
-           
+            <div class="col-sm-3 .col-md-6" style="vertical-align:top">
+                <p class="footer-logo">
+                    <img src="images/footlogo.png" hspace=5 alt="thenos"/>
+                </p>
             </div>
-           
-            <div class="col-sm-6 .col-sm-4">
+            <div class="col-sm-6 .col-md-12">
               <div class="additional-links text-center  editContent">
                 <p style="font-size:14px">
                    <img src="images/footerbadge.png" alt="designed in dallas us made" style="max-height: 90px;"><br><br>
@@ -21,7 +20,7 @@
             <div class="col-sm-4 additional-links2">
                 <small>
                     <strong>THENOS.us</strong>
-                    <div style="text-align:left">
+                    <div class="footer-links">
                         <a href="http://www.thenos.us/home.php#home">Home</a><br>
                         <a href="http://www.thenos.us/home.php#models">Products/Models</a><br>
                         <a href="http://www.thenos.us/commercial.php">Commercial</a><br>
@@ -35,7 +34,7 @@
             <div class="col-sm-4 additional-links2">
                 <small>
                     <strong>INFO</strong>
-                    <div style="text-align:left">
+                    <div class="footer-links">
                         <a href="http://www.thenos.us/index.php?route=information/information&information_id=3">Privacy Policy</a><br>
                         <a href="http://www.thenos.us/index.php?route=information/information&information_id=5">Terms & Conditions</a><br>
                         <a href="http://www.thenos.us/index.php?route=information/information&information_id=7">Shipping & Returns</a><br>
@@ -46,7 +45,7 @@
             <div class="col-sm-4 additional-links2">
                 <small>
                     <strong>SHOP/PRODUCT</strong>
-                    <div style="text-align:left">
+                    <div class="footer-links">
                         <a href="http://www.thenos.us/home.php">In-Ceiling PlayBox</a><br>
                         <a href="http://www.thenos.us/home.php">PB1-C</a><br>
                         <a href="http://www.thenos.us/home.php">In-Wall PlayBox</a><br>
@@ -60,7 +59,7 @@
             
             </div>
             </div>
-            <div class="col-sm-3 .col-sm-4"  style="vertical-align:top">
+            <div class="col-sm-3 .col-md-6"  style="vertical-align:top">
                 <h6 class="editContent"></h6>
                 <div class="address editContent" style=""><p style="color:#395477;">
 phone: 972.426.9200<br>

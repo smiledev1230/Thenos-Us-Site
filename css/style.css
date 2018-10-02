@@ -3387,11 +3387,11 @@ footer
     font-size: 14px;
     padding-top: 65px;
     padding-bottom: 65px;
-    background-color: #2d2d2d;
     color: #fff;
     background-image: url(../images/footer-paint-splatter.png);
     background-repeat: no-repeat;
     background-position: center bottom;
+    background-size: cover;
 }
 .footer-3.v-center,
 .footer-3 .v-center {
@@ -3789,4 +3789,26 @@ color:#000;
 }
 .heading{
     font-family: 'Raleway', sans-serif;
+}
+#footer .footer-logo {
+    padding-left:35px;
+}
+#footer .footer-logo img {
+    float:right;
+    max-height: 90px;
+}
+#footer.footer-3 .footer-links {
+    text-align: left;
+}
+@media (max-width: 768px) {
+    #footer.footer-3 .footer-logo img {
+        float: unset;
+    }
+    #footer.footer-3 .v-center.row > div {
+        margin-top: 16px;
+        text-align: center;
+    }
+    #footer.footer-3 .additional-links, #footer.footer-3 .footer-links {
+        text-align: center;
+    }
 }
