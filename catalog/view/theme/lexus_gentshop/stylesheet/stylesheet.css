@@ -1442,7 +1442,6 @@ body[class*="-home"] .header-top-v4 {
   clear: both;
 }
 #footer a {
-  font-size: 11px;
   text-transform: none;
   color: #3a5679;
 }
@@ -5313,6 +5312,9 @@ a.top-logo {
 .footer-center .additional-links2 a {
     color: #3a5679;
     text-decoration: none !important;
+}
+.footer-center .additional-links2 a:hover {
+    color: #fff !important;
 }
 #footer .footer-center .emailtext {
     color: #428bca;
