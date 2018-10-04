@@ -3811,4 +3811,7 @@ color:#000;
     #footer.footer-3 .additional-links, #footer.footer-3 .footer-links {
         text-align: center;
     }
+    .sections.colorsbg {
+        padding-top: 114px;
+    }
 }
