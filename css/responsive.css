@@ -76,12 +76,11 @@ background:url('http://www.thenos.us/image/Mobile-Vid-Bkgrnd-1100x900.jpg') no-r
         transform: translate3d(0, -15px, 0);
 
     }
-    nav ul li:hover .dropdown-menu {
+    nav ul li:hover>.dropdown-menu {
         visibility: visible;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         opacity: 1;
-
     }
     nav ul li .dropdown-menu li {
         margin: 0;

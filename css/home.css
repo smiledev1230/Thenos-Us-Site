@@ -10,7 +10,9 @@
     color:#32475F!important;
     text-shadow:none!important;
 }
-
+.navbar.fixed-nav .navbar-nav>.dropdown.open>a:hover{
+    background-color: #5db9fb;
+}
 .home-header#navbar-collapse {
     text-align: center;
     position: relative;
@@ -59,6 +61,28 @@
 #mc_embed_signup .mc-field-group input {
     max-width: 300px!important;
     margin: 0 auto!important;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
 }
 @media (min-width: 768px) {
     #navbar-collapse {
