@@ -85,6 +85,9 @@
   margin-left: 10px;
 }
 @media (min-width: 768px) {
+    .home-header#navbar-collapse {
+
+    }
     #navbar-collapse {
         text-align: center;
         margin-right: 102px;
@@ -110,4 +113,9 @@
         position: absolute;
         right: 0px;
     }    
+}
+@media (max-width: 767px) {
+    .home-header#navbar-collapse {
+        text-align: left;
+    }
 }
