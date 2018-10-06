@@ -3807,3 +3807,8 @@ color:#000;
         padding-top: 114px;
     }
 }
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .dropdown.open .dropdown-menu>li>a {
+        color: #fff;
+    }
+}

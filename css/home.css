@@ -117,5 +117,12 @@
 @media (max-width: 767px) {
     .home-header#navbar-collapse {
         text-align: left;
+        max-height: unset;
     }
+    .home-header .home-shop-btn, .home-header .home-sign-btn {
+        width: 175px;
+    }
+    .home-header .home-shop-btn #downloadsmall, .home-header .home-sign-btn #downloadsmallwhite {
+        margin-left: 4px;
+    } 
 }
