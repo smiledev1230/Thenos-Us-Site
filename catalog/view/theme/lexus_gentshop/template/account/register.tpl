@@ -1,7 +1,3 @@
-<style>
-#same_address_block .checkbox{
-  margin-left:10px;
-}</style>
 <?php  echo $header; ?> 
 <?php require( ThemeControlHelper::getLayoutPath( 'common/mass-header.tpl' )  ); ?>
  <?php require( ThemeControlHelper::getLayoutPath( 'common/mass-container.tpl' )  ); ?>
@@ -21,7 +17,26 @@
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
         <fieldset id="account">
           <legend><?php echo $text_your_details; ?></legend>
-          
+          <div class="form-group required" style="display: <?php echo (count($customer_groups) > 1 ? 'block' : 'none'); ?>;">
+            <label class="col-sm-2 control-label"><?php echo $entry_customer_group; ?></label>
+            <div class="col-sm-10">
+              <?php foreach ($customer_groups as $customer_group) { ?>
+              <?php if ($customer_group['customer_group_id'] == $customer_group_id) { ?>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" checked="checked" />
+                  <?php echo $customer_group['name']; ?></label>
+              </div>
+              <?php } else { ?>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" />
+                  <?php echo $customer_group['name']; ?></label>
+              </div>
+              <?php } ?>
+              <?php } ?>
+            </div>
+          </div>
           <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-firstname"><?php echo $entry_firstname; ?></label>
             <div class="col-sm-10">
@@ -56,6 +71,12 @@
               <?php if ($error_telephone) { ?>
               <div class="text-danger"><?php echo $error_telephone; ?></div>
               <?php } ?>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-fax"><?php echo $entry_fax; ?></label>
+            <div class="col-sm-10">
+              <input type="text" name="fax" value="<?php echo $fax; ?>" placeholder="<?php echo $entry_fax; ?>" id="input-fax" class="form-control" />
             </div>
           </div>
           <?php foreach ($custom_fields as $custom_field) { ?>
@@ -272,7 +293,7 @@
             </div>
           </div>
           <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-zone">State</label>
+            <label class="col-sm-2 control-label" for="input-zone"><?php echo $entry_zone; ?></label>
             <div class="col-sm-10">
               <select name="zone_id" id="input-zone" class="form-control">
               </select>
@@ -329,7 +350,7 @@
           </div>
           <?php } ?>
           <?php if ($custom_field['type'] == 'checkbox') { ?>
-          <div id="custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-group custom-field <?php echo $custom_field['name']; ?>" data-sort="<?php echo $custom_field['sort_order']; ?>">
+          <div id="custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-group custom-field" data-sort="<?php echo $custom_field['sort_order']; ?>">
             <label class="col-sm-2 control-label"><?php echo $custom_field['name']; ?></label>
             <div class="col-sm-10">
               <div>
@@ -436,29 +457,6 @@
           <?php } ?>          
         </fieldset>
         <fieldset>
-          <legend>Customer Group</legend>
-          <div class="form-group required" style="display: <?php echo (count($customer_groups) > 1 ? 'block' : 'none'); ?>;">
-            <label class="col-sm-2 control-label"><?php echo $entry_customer_group; ?></label>
-            <div class="col-sm-10">
-              <?php foreach ($customer_groups as $customer_group) { ?>
-              <?php if ($customer_group['customer_group_id'] == $customer_group_id) { ?>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" checked="checked" />
-                  <?php echo $customer_group['name']; ?></label>
-              </div>
-              <?php } else { ?>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" />
-                  <?php echo $customer_group['name']; ?></label>
-              </div>
-              <?php } ?>
-              <?php } ?>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset>
           <legend><?php echo $text_your_password; ?></legend>
           <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-password"><?php echo $entry_password; ?></label>
@@ -478,29 +476,33 @@
               <?php } ?>
             </div>
           </div>
+        </fieldset>
+        <fieldset>
+          <legend><?php echo $text_newsletter; ?></legend>
           <div class="form-group">
-            <label class="col-sm-2 control-label">&nbsp;</label>
+            <label class="col-sm-2 control-label"><?php echo $entry_newsletter; ?></label>
             <div class="col-sm-10">
               <?php if ($newsletter) { ?>
-              <label>
-                <input type="checkbox" name="newsletter" value="1" checked/>
-                I wish to subscribe to the Thenos, LLC. updates. </label>
+              <label class="radio-inline">
+                <input type="radio" name="newsletter" value="1"/>
+                Yes (no spam from us, we promise) </label>
+              <label class="radio-inline">
+                <input type="radio" name="newsletter" value="0"  checked="checked" />
+                No (don’t make us cry)</label>
               <?php } else { ?>
-              <label>
-                <input type="checkbox" name="newsletter" value="1"  checked="checked" />
-                I wish to subscribe to the Thenos, LLC. updates. </label>
+              <label class="radio-inline">
+                <input type="radio" name="newsletter" value="1"  checked="checked" />
+                Yes (no spam from us, we promise) </label>
+              <label class="radio-inline">
+                <input type="radio" name="newsletter" value="0"/>
+                No (don’t make us cry)</label>
               <?php } ?>
             </div>
           </div>
-          <div class="form-group" id="same_address_block">
-          </div>
         </fieldset>
-        <label class="col-sm-2 control-label">&nbsp;</label>
-        <div class="col-sm-10">
         <?php if ($text_agree) { ?>
-          
         <div class="buttons">
-          <div class=""><?php echo $text_agree; ?>
+          <div class="pull-right"><?php echo $text_agree; ?>
             <?php if ($agree) { ?>
             <input type="checkbox" name="agree" value="1" checked="checked" />
             <?php } else { ?>
@@ -517,7 +519,6 @@
           </div>
         </div>
         <?php } ?>
-        </div>
       </form>
       <?php echo $content_bottom; ?></div>
    </div> 
@@ -529,7 +530,7 @@
 </div> 
 <script type="text/javascript"><!--
 // Sort the custom fields
-/* $('#account .form-group[data-sort]').detach().each(function() {
+$('#account .form-group[data-sort]').detach().each(function() {
 	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#account .form-group').length) {
 		$('#account .form-group').eq($(this).attr('data-sort')).before(this);
 	} 
@@ -541,7 +542,7 @@
 	if ($(this).attr('data-sort') < -$('#account .form-group').length) {
 		$('#account .form-group:first').before(this);
 	}
-}); */
+});
 
 $('#address .form-group[data-sort]').detach().each(function() {
 	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#address .form-group').length) {
@@ -574,7 +575,6 @@ $('input[name=\'customer_group_id\']').on('change', function() {
 					$('#custom-field' + custom_field['custom_field_id']).addClass('required');
 				}
 			}
-      $('.same_address').show();
 			
 
 		},
@@ -696,10 +696,5 @@ $('select[name=\'country_id\']').on('change', function() {
 });
 
 $('select[name=\'country_id\']').trigger('change');
-$(document).ready(function(){
-    $(".same_address").detach().appendTo('#same_address_block');
-    $('#same_address_block').show();
-    $('#same_address_block .control-label').html("&nbsp");
-})
 //--></script>
 <?php echo $footer; ?>

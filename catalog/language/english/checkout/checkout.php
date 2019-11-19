@@ -26,7 +26,7 @@ $_['text_your_password']             = 'Your Password';
 $_['text_agree']                     = 'I have read and agree to the <a href="%s" class="agree"><b>%s</b></a>';
 $_['text_address_new']               = 'I want to use a new address';
 $_['text_address_existing']          = 'I want to use an existing address';
-$_['text_shipping_method']           = 'Please select the preferred shipping method to use on this order. <b><a href="/image/UPS Transit Map.jpg" target="_blank" style="color:blue;text-decoration:underline">View Ground Transit Times</a></b><BR>*Regardless of express shipping selection, items still require the standard fulfillment time. Typical fulfillment for most in-stock product is 2-3 business days or less.';
+$_['text_shipping_method']           = 'Please select the preferred shipping method to use on this order. <BR>*Regardless of express shipping selection, items still require the standard fulfillment time. Typical fulfillment for most in-stock product is 2-3 business days or less.';
 $_['text_payment_method']            = 'Please select the preferred payment method to use on this order.';
 $_['text_comments']                  = 'Add Comments About Your Order';
 $_['text_recurring_item']            = 'Recurring Item';

@@ -1,5 +1,5 @@
 <?php
-$title="PB1-C Resources | ";
+$title="PB1-C VIP Pre-Order | ";
 include("includes/header.php");
 ?>
 
@@ -7,8 +7,9 @@ include("includes/header.php");
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
     <style type="text/css">
 		.boldbullet li{font-weight:bold}
-		.bluelink{color:#17438B;text-decoration:underline}
-		.bluelink:hover{color:#ffffff}
+		.bluelink:link{color:#17438B;text-decoration:none;}
+		.bluelink:visited{color:#17438B;text-decoration:none;}
+		.bluelink:hover{color:#EA9107!important}
 		.bodylink{color:#EA9107!important}
 		
 		.bodylink:hover{color:#ffffff}

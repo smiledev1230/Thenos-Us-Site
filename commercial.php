@@ -1,7 +1,8 @@
 <?php
-include("includes/header.php");
+include("includes/header2.php");
 ?>
  
+<link rel="stylesheet" href="css/home.css">
 <script>
 var bgImageArray = ["c1.jpg", "c3.jpg",   "c5.jpg",  "c7.jpg","c2.jpg", "c6.jpg",   "c8.jpg"],
 base = "http://www.thenos.us/image/",
@@ -46,7 +47,7 @@ backgroundSequence();
                                 <div class="home-intro-half">
                                   <h1>the <strong>PlayBox</strong> for the <br>
 business environment</h1>
-                                    <h3 style="color: rgb(255, 255, 255); font-size: 18px; background-color: rgba(0, 0, 0, 0);">imagine full, robust and warm sound in a commercial audio system with no need to run wiring and/or locate expensive centralized equipment - yep, meet the amp-less sound system via the PlayBox<sup>&trade;</sup> by thenos.</h3>
+                                    <h3 style="color: rgb(255, 255, 255); font-size: 18px; background-color: rgba(0, 0, 0, 0);">imagine full, robust and warm sound in a commercial audio system with no need to run wiring and/or locate expensive centralized equipment - yep, meet the amp-less sound system via the PlayBox<sup>&trade;</sup> by Thenos.</h3>
                                  <div class="subscribe-form3">
                                
                                 
@@ -145,7 +146,7 @@ business environment</h1>
                                         <img class="img-circle" src="images/testimonial/1.jpg" alt="">
                                     </div>!-->
                                     <div class="testimonial-msg"><i class="fa fa-quote-left"></i>
-                                        As we continually update and modernize our facility the PlayBox<sup>&trade;</sup> by thenos makes a great addition to our music system!
+                                        As we continually update and modernize our facility the PlayBox<sup>&trade;</sup> by Thenos makes a great addition to our music system!
                                         <i class="fa fa-quote-right pull-right"></i>
                                     </div>
  <div class="white-separator"></div>
@@ -298,14 +299,14 @@ Richardson, TX</div>
                                         </style>
                                         <div id="mc_embed_signup">
                                         <div class="title text-center"><h1>I'm interested, keep me informed</h1></div>
-                                        <p class="white-text">We will keep you updated on the latest commercial related thenos products. No spam (we pinky swear).</p>
+                                        <p class="white-text">We will keep you updated on the latest commercial related Thenos products. No spam (we pinky swear).</p>
                                         <form action="//thenos.us12.list-manage.com/subscribe/post?u=5eb1381680bd287484d910209&amp;id=63739df084" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                             <div id="mc_embed_signup_scroll">
                                                 <div class="mc-field-group input-group text-center">
                                                     <strong>User Type</strong>
                                                     <ul>
-                                                        <li><input type="radio" value="End User" name="MMERGE3" checked="" id="mce-MMERGE3-0"><label for="mce-MMERGE3-0"> End-User: “I will us thenos products in my home or business”</label></li>
-                                                        <li><input type="radio" value="Reseller" name="MMERGE3" id="mce-MMERGE3-1"><label for="mce-MMERGE3-1"> Reseller: “I install or resell thenos products”</label></li>
+                                                        <li><input type="radio" value="End User" name="MMERGE3" checked="" id="mce-MMERGE3-0"><label for="mce-MMERGE3-0"> End-User: “I will us Thenos products in my home or business”</label></li>
+                                                        <li><input type="radio" value="Reseller" name="MMERGE3" id="mce-MMERGE3-1"><label for="mce-MMERGE3-1"> Reseller: “I install or resell Thenos products”</label></li>
                                                     </ul>
                                                 </div>
                                                 <div class="mc-field-group">

@@ -1,468 +1,222 @@
 /* ==========================================================================
-
    Plugins
-
 /*
-
  * jQuery FlexSlider v2.2.0
-
  * http://www.woothemes.com/flexslider/
-
  *
-
  * Copyright 2012 WooThemes
-
  * Free to use under the GPLv2 license.
-
  * http://www.gnu.org/licenses/gpl-2.0.html
-
  *
-
  * Contributing author: Tyler Smith (@mbmufffin)
-
  */
-
-
-
 
 
 /* Browser Resets
-
 *********************************/
-
 .flex-container a:active,
-
 .flexslider a:active,
-
 .flex-container a:focus,
-
 .flexslider a:focus  {outline: none;}
-
 .slides,
-
 .flex-control-nav,
-
 .flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
-
-
 /* Icon Fonts
-
 *********************************/
-
 /* Font-face Icons */
-
 @font-face {
-
   font-family: 'flexslider-icon';
-
   src:url('../fonts/flexslider-icon.eot');
-
   src:url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-
     url('../fonts/flexslider-icon.woff') format('woff'),
-
     url('../fonts/flexslider-icon.ttf') format('truetype'),
-
     url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
-
   font-weight: normal;
-
   font-style: normal;
-
 }
-
-
 
 /* FlexSlider Necessary Styles
-
 *********************************/
-
 .flexslider {margin: 0; padding: 0;}
-
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-
 .flexslider .slides img {width: 100%; display: block;}
-
 .flex-pauseplay span {text-transform: capitalize;}
 
-
-
 /* Clearfix for the .slides element */
-
 .slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
-
 html[xmlns] .slides {display: block;}
-
 * html .slides {height: 1%;}
 
-
-
 /* No JavaScript Fallback */
-
 /* If you are not using another script, such as Modernizr, make sure you
-
  * include js that eliminates this class on page load */
-
 .no-js .slides > li:first-child {display: block;}
 
-
-
 /* FlexSlider Default Theme
-
 *********************************/
-
 .flexslider { margin: 0 0 60px; background: transparent; border: 4px solid #fff; position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1; }
-
 .flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
-
 .loading .flex-viewport { max-height: 300px; }
-
 .flexslider .slides { zoom: 1; }
-
 .carousel li { margin-right: 5px; }
 
-
-
 /* Direction Nav */
-
 .flex-direction-nav {*height: 0;}
-
 .flex-direction-nav a  { display: block; width: 40px; height: 45px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
-
 .flex-direction-nav .flex-prev { left: -50px; }
-
 .flex-direction-nav .flex-next { right: -50px; text-align: right; }
-
 .flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
-
 .flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
-
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
-
 .flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
-
 .flex-direction-nav a:before  { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
-
 .flex-direction-nav a.flex-next:before  { content: '\f002'; }
 
-
-
 /* Pause/Play */
-
 .flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
-
 .flex-pauseplay a:before  { font-family: "flexslider-icon"; font-size: 20px; display: inline-block; content: '\f004'; }
-
 .flex-pauseplay a:hover  { opacity: 1; }
-
 .flex-pauseplay a.flex-play:before { content: '\f003'; }
 
-
-
 /* Control Nav */
-
 .flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
-
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
-
 .flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
-
 .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
-
 .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
 
-
-
 .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
-
 .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
-
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
-
 .flex-control-thumbs img:hover {opacity: 1;}
-
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
-
-
 @media screen and (max-width: 860px) {
-
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
-
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
-
 }
-
-
 
 /*** Home Slider ***/
-
 .flexslider { background: transparent; border: none; box-shadow: none; margin: 0; overflow: hidden; }
-
 .flex-direction-nav a { color: rgb(255,255,255); color: rgba(255,255,255,0.8); text-shadow: 2px 2px 2px #000000; }
-
 .flex-direction-nav a:hover { color: #FFFFFF; }
-
 .flex-caption { color: #FFFFFF; position: absolute; bottom: 5%; z-index:99; }
-
 .caption-left { left: 20%; }
-
 .caption-right { right: 5%; }
-
 .flex-caption h1 { color: #FFFFFF; font-family:'Raleway', arial, helvetica, sans-serif; font-size: 55px; font-weight: normal; line-height: 64px; margin: 0; text-shadow: 0 2px 3px rgba(0,0,0,0.5); }
-
 .flex-caption h2 { color: #FFFFFF; font-family:'Raleway', arial, helvetica, sans-serif; font-size: 21px; font-weight: normal; line-height: 20px; text-shadow: 0 2px 3px rgba(0,0,0,0.5);margin-bottom:-5px; }
-
 .flex-caption .btn { margin-top: 15px; margin-right: 20px; }
-
 .img-area { position: relative; }
 
-
-
 /* ==========================================================================
-
    Media Queries
-
    ========================================================================== */
 
-
-
 @media (min-width: 992px) {
-
     /*** Home Slider ***/
-
     .flex-direction-nav a { height: 75px; width: 45px; }
-
     .flex-direction-nav a:before { font-size: 68px; }
-
 }
-
 @media (max-width: 991px) {
 
-
-
     /*** Home Header ***/
-
     .flex-caption { bottom: auto; left: auto; padding: 25px; position: static; }
-
     .flex-caption h1 { color: #000000; text-shadow: none; }
-
     .flex-caption h2 { color: #000000; text-shadow: none; }
-
     .flex-direction-nav a { top: 200px; }
 
-
-
     .flex-caption a.play-button,
-
     .flex-caption a.play-button:hover {
-
         color:#000;
-
         text-shadow: none;
-
     }
-
 }
-
 @media (max-width: 767px) {
-
    
-
     /*** Home Slider ***/
-
-    .flex-caption h1 { font-size: 20px; line-height: 39px; }
-
-	.txt-m {font-size:14px}
-
-	ul  li{padding:0px!important}
-
+    .flex-caption h1 { font-size: 30px; line-height: 39px; }
 }
-
-
-
 
 
 @media (max-width: 600px) {
-
     .flex-direction-nav a { top: 125px; }
 
-
-
     /*** Product DL Block ***/
-
     .product-dl-table-block .btn-red { font-size: 12px; padding: 10px; }
-
 }
-
 @media (max-width: 480px) {
-
     .flex-direction-nav a { top: 75px; }
-
 }
-
 /**
-
  * Youtube Video Background
-
  */
 
-
-
 .tubular-container {
-
     overflow: hidden;
-
     position: absolute;
-
     top: 0;
-
     left: 0;
-
     width: 100%;
-
     height: 100%
-
 }
-
 .tubular-player {
-
     position: absolute;
-
     opacity: 0;
-
 }
-
 .tubular-shield {
-
     width: 100%;
-
     height: 100%;
-
     z-index: 1;
-
     position: absolute;
-
     left: 0;
-
     top: 0;
-
 }
-
-
 
 #vs-mobile-indicator {
-
     width: 0;
-
     height: 0;
-
     visibility: hidden;
-
 }
-
 @media screen and (max-width: 782px) {
-
     #vs-mobile-indicator, .tubular-shield {
-
         display: none;
-
     }
-
 }
-
-
 
 .align-text-center {
-
     text-align: center;
-
 }
-
-
 
 /* Shortcode */
-
 a.play-button {
-
     color: #fff;
-
     display: inline-block;
-
     vertical-align: middle;
-
     margin-top: 15px;
-
     text-decoration: none;
-
     text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-
     text-transform: uppercase;
-
     font-size: 14px;
-
 }
-
 a.play-button .dashicons {
-
     font-size: 25px;
-
     line-height: 16px;
-
     font-family: dashicons;
-
     margin-left: -7px;
-
 }
-
 a.play-button:hover {
-
     text-decoration: none;
-
     color: #fff;
-
 }
-
-
 
 #bg{
-
   position: fixed; 
-
   top: 0; 
-
   left: 0; 
-
 	
-
   /* Preserve aspet ratio */
-
   min-width: 100%;
-
   min-height: 100%;
-
 	
-
 	}
-
-
-
-.flex-caption.caption-right {
-
-  padding-bottom: 4%;
-
-}
-
-.flex-caption .badge-group {
-
-  display: flex;
-
-}
-
-.flex-caption .badge-group img:last-child {
-
-  width: 196px;
-    height: 163px;
-
-}

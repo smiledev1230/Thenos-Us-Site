@@ -29,7 +29,7 @@
           <?php if ($shipping_method) { ?>
           <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?><br />
           <?php } ?>
-          <b>PO Number:</b> <?php echo $reg_no; ?>
+          <b>Po Number:</b> <?php echo $reg_no; ?>
         </td>
         <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><b><?php echo $text_email; ?></b> <?php echo $email; ?><br />
           <b><?php echo $text_telephone; ?></b> <?php echo $telephone; ?><br />
@@ -122,7 +122,7 @@ If you have any questions or need assistance please contact us: <a href="mailto:
   <p align="center"><strong>about thenos</strong><Br />Thenos is based in Dallas, TX and the maker of the PlayBox: wall-box for the Sonos Play:1.<Br />
 <Br /><strong>about the PlayBox™</strong><Br />The PlayBox is a custom in-wall enclosure specifically made for the Sonos Play:1. Invented by Installers,<Br />the PlayBox allows you to take the Play:1 from tabletop to an in-wall application thus eliminating unsightly cords.<Br /><Br />website: <a href="http://www.thenos.us/" target="_blank">www.thenos.us</a><Br />
 facebook: <a href="http://www.fb.com/thenosplaybox" target="_blank">www.fb.com/thenosplaybox</a><Br />YouTube: <a href="http://www.thenos.us/videos" target="_blank">www.thenos.us/videos</a><Br />
-feedback: <a href="mailto:info@thenos.us" target="_blank">info@thenos.us</a><Br /></p>
+feedback: <a href="mailto:info@theno.us" target="_blank">info@theno.us</a><Br /></p>
 </div>
 </body>
 </html>

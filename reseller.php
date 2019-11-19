@@ -1,6 +1,7 @@
 <?php
-include("includes/header.php");
+include("includes/header2.php");
 ?>
+<link rel="stylesheet" href="css/home.css">
 
      <!-- Service Section-->
             <section id="service" class="sections colorsbg">
@@ -8,10 +9,13 @@ include("includes/header.php");
                     <div class="row">
                             <div class="col-sm-12">
                             	 <div class="title text-center"><br>
+<br><br>
 <br>
+
 <h1>dealers & distributors</h1>
-Thenos has wholesale programs available for ultra-cool resellers. <br><br>
-<h4 style="margin-bottom:5px!important"><strong>Inquire</strong></h4>(I have a question)
+Thenos has wholesale programs available for ultra-cool resellers. <br><br><br>
+
+<h4 style="margin-bottom:5px!important"><strong>Wholesale Inquiry</strong></h4>(I'm a reseller and I have a question)
 <br>
 <br>
 </div>
@@ -38,19 +42,13 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
  <br>
  <div style="text-align:center" id="resellerapp">
- <hr />
-<h4 style="margin-bottom:5px!important"><strong>I wanna apply now!</strong></h4>
-(online reseller application)
-<br>
-<br>
+ <hr /><br>
+
+<h4 style="margin-bottom:5px!important"><strong>Online Reseller Application</strong></h4>
+(apply now to carry Thenos products)
 <section id="app"></section>
-<span style="font-size:0.9em">I prefer old school:</span><br>
 
-<br>
-
- <a href="/pdf/Thenos Reseller App Fillable - 2016.pdf" target="_blank" class="btn download-btnhome" style="font-size:14px">PDF Reseller Application</a>
-
- <br>
+<div id="reseller"></div>
 <br><div id="wufoo-w11xmmn11f1u0pu" style="margin:0 auto;max-width:500px">
 Fill out my <a href="https://honestinstall.wufoo.com/forms/w11xmmn11f1u0pu">online form</a>.
 </div>
@@ -104,14 +102,14 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
                                         </style>
                                         <div id="mc_embed_signup">
                                         <div class="title text-center"><h1>Stay Informed:</h1></div>
-                                        <p class="white-text">Get updates related to thenos and the PlayBox<sup>&trade;</sup></p>
+                                        <p class="white-text">Get updates related to Thenos and the PlayBox<sup>&trade;</sup></p>
                                         <form action="//thenos.us12.list-manage.com/subscribe/post?u=5eb1381680bd287484d910209&amp;id=63739df084" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                             <div id="mc_embed_signup_scroll">
                                                 <div class="mc-field-group input-group text-center">
                                                     <strong>User Type</strong>
                                                     <ul>
-                                                        <li><input type="radio" value="End User" name="MMERGE3" checked="" id="mce-MMERGE3-0"><label for="mce-MMERGE3-0"> End-User: “I will us thenos products in my home or business”</label></li>
-                                                        <li><input type="radio" value="Reseller" name="MMERGE3" id="mce-MMERGE3-1"><label for="mce-MMERGE3-1"> Reseller: “I install or resell thenos products”</label></li>
+                                                        <li><input type="radio" value="End User" name="MMERGE3" checked="" id="mce-MMERGE3-0"><label for="mce-MMERGE3-0"> End-User: “I will us Thenos products in my home or business”</label></li>
+                                                        <li><input type="radio" value="Reseller" name="MMERGE3" id="mce-MMERGE3-1"><label for="mce-MMERGE3-1"> Reseller: “I install or resell Thenos products”</label></li>
                                                     </ul>
                                                 </div>
                                                 <div class="mc-field-group">

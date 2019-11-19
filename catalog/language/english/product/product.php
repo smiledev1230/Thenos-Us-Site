@@ -7,7 +7,7 @@ $_['text_model']               = 'Model:';
 $_['text_reward']              = 'Reward Points:';
 $_['text_points']              = 'Price in reward points:';
 $_['text_stock']               = 'Availability:';
-$_['text_instock']             = '<strong style="color:#6cabd5">In Stock (Ships within 2-3 days)</strong>';
+$_['text_instock']             = '<strong style="color:#6cabd5">In Stock</strong>';
 $_['text_tax']                 = 'Ex Tax:';
 $_['text_discount']            = ' or more ';
 $_['text_option']              = 'Available Options';

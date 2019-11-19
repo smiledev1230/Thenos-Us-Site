@@ -44,7 +44,7 @@
                     <?php if ($points) { ?>
                         <p><i class="fa fa-chevron-down"></i><b><?php echo $text_points; ?></b> <?php echo $points; ?></p>
                     <?php } ?>
-                    <p><i class="fa fa-chevron-down"></i><b class="availability"><?php echo $text_stock; ?></b> <?php echo $stock; ?></p>
+                    <p><i class="fa fa-chevron-down"></i><b class="availability"><?php echo $text_stock; ?></b> <span class="stockstatus"><?php echo $stock; ?></span></p>
 					<p><i class="fa fa-chevron-down"></i><b><a href="/image/UPS Transit Map.jpg" target="_blank" style="color:blue;text-decoration:underline">View Ground Transit Times</a></b></p>
                 </div>
                 <?php if ($price) { ?>
@@ -242,6 +242,14 @@
                     </div>
                 <?php } ?>
 					<div class="stocktext" style="padding-bottom:10px"></div>
+                    <div class="pbcshipping" style="display:none;font-weight: bold; color: #51afe3; background-color: #32475f; padding: 10px;clear:both;margin-bottom:10px">PB1-C PREORDER:<br>
+
+Order now in order to <br>
+
+receive the 
+
+Ceiling PlayBox <br>
+by 12-28-18</div>
                     <div class="quantity-adder" style="clear:both">
                         <div class="quantity-number pull-left">
                             <span class="pull-left"><?php echo $olang->get('entry_qty'); ?></span> 
@@ -263,15 +271,17 @@
                     <div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
                     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script> 
                     <!-- AddThis Button END -->
-                
+              
                 </div>
 
             </div> 
         </div>
-	</div>
+	</div> 
+ <b class="product-note2" style="visibility:none;display:none;padding-top:10px;clear:both"><span style="color:#3C78D8">NOTICE:</span> The model PB1-C is compatible with Sonos One &amp; Play:1, Sonos speakers not included. The PB1-C is suited for Installation within North America. This product features high-voltage electrical components. Observe all federal, state and local codes when installing and consult a licensed professional.*</b>
            
 </div>
-<b class="product-note">NOTE: PLAY:1 SOLD SEPERATELY. THIS MODEL IS ONLY SUITABLE FOR RESIDENTIAL INSTALLATION WITHIN NORTH AMERICA.*</b>
+<b class="product-note">NOTE: SONOS SPEAKERS SOLD SEPERATELY. THIS MODEL IS ONLY SUITABLE FOR RESIDENTIAL INSTALLATION WITHIN NORTH AMERICA.*</b>
+
 </div>
 <div class="tabs-group box">
     <div id="tabs" class="tabnav">

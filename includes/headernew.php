@@ -27,7 +27,7 @@ enclosure made for the Sonos Play:1">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css">
         <!-- Color CSS -->
         <link rel="stylesheet" href="css/colors/blue.css">
 
@@ -90,7 +90,7 @@ enclosure made for the Sonos Play:1">
                 <nav class="navbar fixed-nav navbar-default  navbar-fixed-top" id="main-navbar" role="navigation">
                     <div class="header-title">
                         <a href="http://www.thenos.us/index.php?route=product/category&path=59">
-                            <span class="header-text">The highly anticipated In-Ceiling PlayBox is now available for pre-order!</span>
+                            <span class="header-text"><span style="color:orange">PB1-C PRE-ORDER IS HERE:</span> Hurry, the highly anticipated In-Ceiling PlayBox arriving with limited availability!</span>
                         </a>
                     </div>
                     <div class="container">

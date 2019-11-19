@@ -24,10 +24,6 @@
 <p>
   <textarea name="comment" rows="8" class="form-control"><?php echo $comment; ?></textarea>
 </p>
-<p><strong>Purchase Order #</strong></p>
-<p>
-  <input type="text" class="form-control" name="purchase_order_no" value="<?php echo $purchase_order_no;?>">
-</p>
 <?php if ($text_agree) { ?>
 <div class="buttons">
   <div class="pull-right"><?php echo $text_agree; ?>

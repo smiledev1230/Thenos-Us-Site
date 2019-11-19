@@ -18,10 +18,8 @@ class ControllerAccountRegister extends Controller {
 		$this->load->model('account/customer');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-		
-		
 			$customer_id = $this->model_account_customer->addCustomer($this->request->post);
-
+			
 			// Clear any previous login attempts for unregistered accounts.
 			$this->model_account_customer->deleteLoginAttempts($this->request->post['email']);
 			
@@ -313,12 +311,6 @@ class ControllerAccountRegister extends Controller {
 			$data['newsletter'] = $this->request->post['newsletter'];
 		} else {
 			$data['newsletter'] = '';
-		}
-
-		if (isset($this->request->post['same_address'])) {
-			$data['same_address'] = $this->request->post['same_address'];
-		} else {
-			$data['same_address'] = '';
 		}
 
 		if ($this->config->get('config_account_id')) {

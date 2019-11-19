@@ -1,6 +1,6 @@
 <?php if ($thumb || $images) { ?>
 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 image-container">
-        <div class="img-thumb col-lg-2 col-xs-12 col-sm-12">
+        <div class="img-thumb col-lg-2 col-xs-3 col-sm-3">
     <?php if ($images) { ?>
     <div class="image-additional slide carousel vertical" id="image-additional">
         <div id="image-additional-carousel" class="carousel-inner">
@@ -44,7 +44,7 @@
     <?php } ?> 
 	</div>
 	<?php if ($thumb) { ?>
-    <div class="image col-lg-10 col-sm-12 col-xs-12">
+    <div class="image col-lg-10 col-sm-8 col-xs-8">
 
         <?php if( isset($date_available) && $date_available == date('Y-m-d')) {   ?>            
         <span class="product-label product-label-new">

@@ -97,12 +97,6 @@ class ControllerCheckoutPaymentMethod extends Controller {
 			$data['comment'] = '';
 		}
 
-		if (isset($this->session->data['purchase_order_no'])) {
-			$data['purchase_order_no'] = $this->session->data['purchase_order_no'];
-		} else {
-			$data['purchase_order_no'] = '';
-		}
-
 		$data['scripts'] = $this->document->getScripts();
 
 		if ($this->config->get('config_checkout_id')) {
@@ -186,9 +180,6 @@ class ControllerCheckoutPaymentMethod extends Controller {
 			$this->session->data['payment_method'] = $this->session->data['payment_methods'][$this->request->post['payment_method']];
 
 			$this->session->data['comment'] = strip_tags($this->request->post['comment']);
-
-			// add purchase order # in the session
-			$this->session->data['purchase_order_no'] = strip_tags($this->request->post['purchase_order_no']);
 		}
 
 		$this->response->addHeader('Content-Type: application/json');

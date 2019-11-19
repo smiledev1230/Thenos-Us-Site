@@ -1,2 +1,5 @@
 .form-all{background-color:#4c9eda!important}
 label{text-transform:uppercase!important}
+#header h2 {
+    display: none;
+}

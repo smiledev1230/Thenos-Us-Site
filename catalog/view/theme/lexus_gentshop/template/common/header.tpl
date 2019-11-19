@@ -107,6 +107,13 @@ $stickymenu = isset($themeConfig['stickymenu'])?$themeConfig['stickymenu']:'main
   }
   echo implode( "\r\n",$link );
 ?>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <style>
   body {font-family: <?php echo $themeConfig['normal_fonts1']; ?>; font-size: <?php echo $themeConfig['fontsize1']; ?>}
   #header-main {font-family: <?php echo $themeConfig['normal_fonts2']; ?>; font-size: <?php echo $themeConfig['fontsize2']; ?>}
@@ -128,6 +135,11 @@ $stickymenu = isset($themeConfig['stickymenu'])?$themeConfig['stickymenu']:'main
 
 </head>
 <body class="<?php echo $stickymenu;?> <?php echo $class; ?> <?php echo $helper->getPageClass();?> layout-<?php echo $template_layout; ?>">
+ <div class="header-title">
+   <a href="//www.thenos.us/index.php?route=product/product&path=59&product_id=54"> <img src="/images/PB1-C-for-Resources-Page.png" alt="icon" style="max-height:40px"/> <span class="header-text"  style="color:#ffffff">ORDER NOW! The In-Ceiling PlayBox now shipping... </span>
+                        </a>
+
+                    </div>
   <div  class="row-offcanvas row-offcanvas-left">
   <div id="page">
 

@@ -147,7 +147,6 @@ class ControllerCheckoutCheckout extends Controller {
     
     function checkmail(){
         $this->load->model('checkout/order');
-        $this->model_checkout_order->addOrderHistory(10471,1,'Testing',false);
-        echo "Sent mail!!!";
+        $this->model_checkout_order->addOrderHistory(10171,1,'Testing',false);
     }
 }

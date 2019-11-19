@@ -2,7 +2,7 @@
 <div class="alert alert-warning"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?></div>
 <?php } ?>
 <?php if ($shipping_methods) { ?>
-<p><?php echo $text_shipping_method; ?>..</p>
+<p><?php echo $text_shipping_method; ?></p>
 <?php foreach ($shipping_methods as $shipping_method) { ?>
 <p><strong><?php echo $shipping_method['title']; ?></strong></p>
 <?php if (!$shipping_method['error']) { ?>

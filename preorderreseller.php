@@ -1,5 +1,5 @@
 <?php
-$title="PB1-C Resources | ";
+$title="PB1-C Reseller Pre-Order | ";
 include("includes/header.php");
 ?>
 
@@ -7,8 +7,9 @@ include("includes/header.php");
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
     <style type="text/css">
 		.boldbullet li{font-weight:bold}
-		.bluelink{color:#17438B;text-decoration:underline}
-		.bluelink:hover{color:#ffffff}
+		.bluelink:link{color:#17438B;text-decoration:none;}
+		.bluelink:visited{color:#17438B;text-decoration:none;}
+		.bluelink:hover{color:#EA9107!important}
 		.bodylink{color:#EA9107!important}
 		
 		.bodylink:hover{color:#ffffff}
@@ -90,11 +91,11 @@ the Home Technology/Audio/Video industry. If you are neither, please
 choose a link to get the proper form:<br>
 <br>
 
-<a href="http://www.thenos.us/preorder.php" class="clink">I’m an End-User not a Reseller<br>Take me to my form</a>
+<a href="http://www.thenos.us/preorder.php" class="bluelink">I’m an End-User not a Reseller<br><strong>Take me to my form</strong></a>
 <br>
 <br>
 
-<a href="http://www.thenos.us/reseller.php" class="clink">I’m in the industry and want to become a Thenos PRO (Reseller)<br>PDF Reseller Paperwork</a><br>
+<a href="http://www.thenos.us/reseller.php" class="bluelink">I’m in the industry and want to become a Thenos PRO (Reseller)<br><strong>PDF Reseller Paperwork</strong></a><br>
 <br>
 
 <strong>Get ready… The highly anticipated Ceiling PlayBox is arriving soon! 

@@ -17,7 +17,7 @@ include("includes/headernew.php");
 }
 .navbar.fixed-nav .navbar-nav>li>a{
 	font-family:"GothamMedium";
-    font-size: 18px;    
+    font-size: 18px;
 }
 .navbar.fixed-nav .navbar-nav>li>a:hover{
 	color:#32475F!important;
@@ -37,12 +37,14 @@ include("includes/headernew.php");
         display: inline-block;
     }
 }
+
 </style>
 <link rel="stylesheet" href="css/app.css">
 
 <section id="home1" class="home2">
 
     <main role="main" class="main col-sm-12">
+      a
           
       <div class="row">
         <div class="flexslider">
@@ -426,7 +428,7 @@ Richardson, TX</div>
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
                               <a href="http://www.thenos.us/index.php?route=product/product&path=59&product_id=50" style="color:white">
                                 <img src="images/uploads/PlayBox-Models-PB1-PRO.png" />
-                                <h4>Thenos Wall PlayBox PRO<p>Model: PB1-W-PRO</p><P>RESIDENTIAL & COMMERCIAL</P></h4>
+                                <h4>Thenos Wall PlayBox PRO<p>Model: PB1-W-PRO</p><P>RESIDENTIAL</P></h4>
                                 <p>Designed for professional installations. <br>
 Allows for a clean, cable-free look within the home.</p>
                               </a>
@@ -453,8 +455,10 @@ Allows for a clean, cable-free look within the home.</p>
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
                               <a href="commercial.php"  style="color:white">
                                 <img src="images/uploads/PlayBox-Models-PB1-COM.png" />
-                                <h4>Thenos Wall PlayBox COM <p>Model: PB1-W-COM</p><P>FOR RESIDENTIAL</P></h4>
-                                <p>The in-wall PlayBox that meets commercial code, tailor made for he business enviroment.</p>
+                                <h4>Thenos Wall PlayBox COM <p>Model: PB1-W-COM</p><P>FOR RESIDENTIAL & COMMERCIAL</P></h4>
+                                <p>The in-wall PlayBox that meets <br>
+commercial code, tailor made <br>
+for the business enviroment.</p>
                               </a>
                             </div>
                         	<div class="text-center ">
@@ -468,7 +472,7 @@ Allows for a clean, cable-free look within the home.</p>
                         <div class="col-sm-4">
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
                                 <img src="images/PlayBox-Models-PB1-C-new.png" />
-                                <h4>Thenos Ceiling PlayBox<p>Model: PB1-C</p><P>FOR RESIDENTIAL</P></h4>
+                                <h4>Thenos Ceiling PlayBox<p>Model: PB1-C</p><P>FOR RESIDENTIAL & COMMERCIAL</P></h4>
                                 <p style="padding: 0px 20px;">In-ceiling solution for Sonos One&trade; & Play:1&trade;. Create multi-room audio systems while eliminating racks and amps.</p>
                             </div>
                         	<div class="text-center ">
@@ -479,8 +483,8 @@ Allows for a clean, cable-free look within the home.</p>
                         <div class="col-sm-4">
                             <div class="service text-center" data-wow-offset="120" data-wow-duration="1.5s">
                                 <img src="images/PlayBox-Models-PB1-Pendants-new.png" />
-                                <h4>Thenos Pendant Housing<p>Model: PSH1</p><P>FOR RESIDENTIAL</P></h4>
-                                <p style="padding: 0px 20px;">A pendant kit made for the PB1-C with multiple connectivity otions, for open ceiling environments.</p>
+                                <h4>Thenos Pendant Housing<p>Model: PSH1</p><P>FOR RESIDENTIAL & COMMERCIAL</P></h4>
+                                <p style="padding: 0px 20px;">A pendant kit made for the PB1-C with multiple connectivity options, for open ceiling environments.</p>
                             </div>
                             <div class="text-center ">
                                 <a href="/subscribe.php" class="btn download-btn">Update Me</a>  
@@ -490,7 +494,8 @@ Allows for a clean, cable-free look within the home.</p>
                         <div class="col-sm-4">
                             <div class="service text-center " data-wow-offset="120" data-wow-duration="1.5s">
                                 <img src="images/PlayBox-Models-PB3-new.png" />
-                                <h4>PlayBox System Accessories<p>Available: Q2 & Q3</p><P>FOR RESIDENTIAL</P></h4>
+                                <h4>PlayBox System Accessories<p>Available: Q1 2019</p><br>
+</h4>
                                 <p style="padding: 0px 20px;">A range of complimentary solutions developed for the PlayBox and the installation of Streaming Sound Systems.</p></a>
                             </div>
                         	<div class="text-center ">

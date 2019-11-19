@@ -246,7 +246,6 @@ class ControllerCheckoutConfirm extends Controller {
 			}
 
 			$order_data['comment'] = $this->session->data['comment'];
-			$order_data['purchase_order_no'] = $this->session->data['purchase_order_no'];
 			$order_data['total'] = $total;
 
 			if (isset($this->request->cookie['tracking'])) {

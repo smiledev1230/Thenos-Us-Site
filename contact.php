@@ -1,16 +1,19 @@
 <?php
-include("includes/header.php");
+include("includes/header2.php");
 $subject=$_GET['sb'];
 $menu="contact";
 ?>
 
+<link rel="stylesheet" href="css/home.css">
 
             <!--contact Section-->
             <section id="contact" class="sections" style="padding-bottom:35px">
                 <div class="container" style="margin-top:40px">
                     <div class="row contact-2">
 
-                        <div class="heading wow fadeIn">
+                        <div class="heading wow fadeIn"><br>
+<br>
+
                             <div class="title text-center"><h1>contact us</h1></div>
                             <div class="subtitle text-center"><h5>we're happy to hear from you, unless its bad news...</h5></div>
                             <div class="separator text-center" style="margin-bottom: 25px;"></div>
@@ -21,7 +24,7 @@ $menu="contact";
                             <div class="contact-address">
                                 <h4 style="font-size:1.0em"><br>
 
-thenos - makers of the PlayBox<sup>&trade;</sup></h4>
+Thenos - makers of the PlayBox<sup>&trade;</sup></h4>
 
                             </div>
                             <hr>

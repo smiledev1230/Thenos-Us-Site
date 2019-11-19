@@ -341,9 +341,6 @@ class ControllerProductProduct extends Controller {
 						}
 
 						$product_option_value_data[] = array(
-							/*CI option img starts*/
-							'ciopimage'                   => isset($ciopimage)  ? $ciopimage : array(),
-							/*CI option img ends*/
 							'product_option_value_id' => $option_value['product_option_value_id'],
 							'option_value_id'         => $option_value['option_value_id'],
 							'name'                    => $option_value['name'],
